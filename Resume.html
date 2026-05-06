@@ -6,7 +6,31 @@
         body {
             background-image: url("R2-01001-0019.jpg");
             background-size: cover;
-            color: white; /* Makes text easier to read on a dark background */
+            background-attachment: fixed;
+            color: white; 
+            font-family: sans-serif;
+            /* Adds a black glow behind text to make it pop */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Fixes the invisible dark blue links */
+        a {
+            color: #00ffff; /* Bright Cyan */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Adds a semi-transparent box behind the header for extra readability */
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 8px;
+            display: inline-block;
         }
     </style>
 </head>
@@ -36,4 +60,3 @@
 
 </body>
 </html>
-				
