@@ -4,18 +4,55 @@
     <title>Contact - MagikDrgnMstr</title>
     <style>
         body {
-            /* Using a different background image from your list */
-            background-image: url("Conbkg.jpg"); 
+            background-image: url("Conbkg.jpg");
             background-size: cover;
-            color: white;
+            background-attachment: fixed;
+            color: #ffffff; /* Pure white text */
             text-align: center;
+            font-family: sans-serif;
+            /* Adds a subtle dark glow to make white letters "pop" */
+            text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+        }
+
+        /* LIGHTEN THE LINKS */
+        a {
+            color: #00ffff; /* Bright Cyan glow */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #00ffff; /* Glow effect on hover */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        /* Makes the email box even clearer */
+        main {
+            background: rgba(0, 0, 0, 0.75); 
+            border: 1px solid #00ffff; /* Thin glowing border */
+            padding: 25px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-top: 50px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Contact Me</h1>
+        <h1 style="font-size: 3em; margin-bottom: 10px;">Contact Me</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -26,9 +63,9 @@
         </nav>
     </header>
 
-    <main style="background: rgba(0,0,0,0.6); padding: 20px; border-radius: 10px; display: inline-block; margin-top: 50px;">
-        <p>Feel free to reach out via email:</p>
-        <p><b>michaell@rt9east-itservices.com</b></p>
+    <main>
+        <p style="font-size: 1.2em;">Feel free to reach out via email:</p>
+        <p><b style="font-size: 1.5em; color: #00ffff;">michaell@rt9east-itservices.com</b></p>
     </main>
 
 </body>
