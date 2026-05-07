@@ -4,15 +4,14 @@
     <title>Welcome Page</title>
     <style>
         body {
-            /* This points exactly to your filename in the sidebar */
             background-image: url("R1-01009-010A.jpg");
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
-            color: white; /* Makes your text readable on a dark background */
+            color: white;
             font-family: sans-serif;
+            padding: 20px; /* Added for better spacing */
         }
-        /* Style for the link at the bottom */
         a {
             color: cyan;
             font-weight: bold;
@@ -20,17 +19,24 @@
     </style>
 </head>
 <body>
+    <nav style="text-align: center; margin-bottom: 20px;">
+        <a href="Home.html">Home</a> | 
+        <a href="Certificates.html">Certificates</a> | 
+        <a href="Contact.html">Contact</a>
+    </nav>
+    <hr>
 
     <p><b>Michael Ludwig</b></p>
     <p>Welcomes you to his webpage.</p>
+    
+    <p>Please click on the image below to view my Resume:</p>
 
-    <p>Please click on the image below to view my Resume:<br>
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-    <!-- Original Selfie Link -->
-    <a href="Resume.html">
-        <img src="Mike Selfie.jpg" alt="Mike's Photo" width="400" height="300">
-    </a>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <a href="Resume.html">
+            <img src="Mike Selfie.jpg" alt="Mike's Photo" width="400" height="300">
+        </a>
+        <img src="R1-01003-0008.jpg" alt="New Image" width="400">
+    </div>
 
-    <!-- New Image on the Far Right -->
-    <img src="R1-01003-0008.jpg" alt="New Image" width="400">
-</div>
+</body>
+</html>
