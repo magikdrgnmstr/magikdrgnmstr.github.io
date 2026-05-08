@@ -8,10 +8,24 @@
             background-image: url("Ludovico 1.jpg");
             background-size: cover;
             background-attachment: fixed;
-            
             /* Changes main text to White */
-            color: white; 
+            color: white;
             font-family: sans-serif;
+            
+            /* Center the text globally */
+            text-align: center; 
+        }
+
+        /* Removes bullets and centering for the list */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Makes the links sit side-by-side (optional, but looks better centered) */
+        li {
+            display: inline-block;
+            margin: 0 15px;
         }
 
         /* Changes the color of your links */
@@ -29,7 +43,6 @@
     </style>
 </head>
 <body>
-
     <header>
         <h1>Home</h1>
         <nav>
@@ -41,6 +54,5 @@
             </ul>
         </nav>
     </header>
-
 </body>
 </html>
