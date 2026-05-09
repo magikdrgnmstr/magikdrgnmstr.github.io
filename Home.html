@@ -4,42 +4,45 @@
     <title>Home</title>
     <style>
         body {
-            /* Fixes the background image */
-            background-image: url("Ludovico 1.jpg");
-            background-size: cover;
-            background-attachment: fixed;
-            /* Changes main text to White */
-            color: white;
-            font-family: sans-serif;
-            
-            /* Center the text globally */
-            text-align: center; 
-        }
+  background-image: url("Ludovico 1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  /* 1. This enlarges the base text size for the whole page */
+  font-size: 18px; 
+}
 
-        /* Removes bullets and centering for the list */
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+/* 2. This specifically makes the "Home" title much larger */
+h1 {
+  font-size: 60px;
+  margin-top: 50px;
+}
 
-        /* Makes the links sit side-by-side (optional, but looks better centered) */
-        li {
-            display: inline-block;
-            margin: 0 15px;
-        }
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-        /* Changes the color of your links */
-        a {
-            color: #00ffff; /* Bright Cyan */
-            text-decoration: none;
-            font-weight: bold;
-        }
+li {
+  display: inline-block;
+  margin: 0 15px;
+}
 
-        /* Changes color when you hover over a link */
-        a:hover {
-            color: #ffffff;
-            text-decoration: underline;
-        }
+a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+  /* 3. This enlarges your navigation links */
+  font-size: 24px;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
     </style>
 </head>
 <body>
