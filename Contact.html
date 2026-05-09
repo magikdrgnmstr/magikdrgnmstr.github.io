@@ -7,24 +7,35 @@
             background-image: url("Conbkg.jpg");
             background-size: cover;
             background-attachment: fixed;
-            color: #ffffff; /* Pure white text */
+            color: #ffffff;
             text-align: center;
             font-family: sans-serif;
-            /* Adds a subtle dark glow to make white letters "pop" */
             text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+            /* Base font size for general text */
+            font-size: 22px; 
         }
 
-        /* LIGHTEN THE LINKS */
+        /* 1. Enlarged Heading */
+        h1 {
+            font-size: 4em !important; /* Forces it to be larger than the previous 3em */
+            margin-bottom: 20px;
+        }
+
+        /* 2. Enlarged Navigation Links */
+        nav ul li a {
+            font-size: 1.5em; /* Approximately 33px */
+            margin: 0 10px;
+        }
+
         a {
-            color: #00ffff; /* Bright Cyan glow */
+            color: #00ffff;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.1em;
         }
 
         a:hover {
             color: #ffffff;
-            text-shadow: 0 0 10px #00ffff; /* Glow effect on hover */
+            text-shadow: 0 0 10px #00ffff;
         }
 
         ul {
@@ -33,26 +44,33 @@
         }
 
         li {
-            display: inline;
+            display: inline-block;
             margin: 0 15px;
         }
 
-        /* Makes the email box even clearer */
         main {
-            background: rgba(0, 0, 0, 0.75); 
-            border: 1px solid #00ffff; /* Thin glowing border */
-            padding: 25px;
+            background: rgba(0, 0, 0, 0.75);
+            border: 2px solid #00ffff; /* Slightly thicker border for visibility */
+            padding: 40px; /* More breathing room for larger text */
             border-radius: 15px;
             display: inline-block;
             margin-top: 50px;
             box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        /* 3. Enlarged Email Text */
+        .email-text {
+            font-size: 1.8em; /* Makes the email address very large */
+            color: #00ffff;
+            display: block;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1 style="font-size: 3em; margin-bottom: 10px;">Contact Me</h1>
+        <h1>Contact Me</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -64,8 +82,8 @@
     </header>
 
     <main>
-        <p style="font-size: 1.2em;">Feel free to reach out via email:</p>
-        <p><b style="font-size: 1.5em; color: #00ffff;">michaell@rt9east-itservices.com</b></p>
+        <p>Feel free to reach out via email:</p>
+        <p><b class="email-text">michaell@rt9east-itservices.com</b></p>
     </main>
 
 </body>
