@@ -7,15 +7,42 @@
             background-image: url("R2-01001-0019.jpg");
             background-size: cover;
             background-attachment: fixed;
-            color: white; 
+            color: white;
             font-family: sans-serif;
-            /* Adds a black glow behind text to make it pop */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            /* Base text size */
+            font-size: 20px;
         }
 
-        /* Fixes the invisible dark blue links */
+        /* Enlarge the main Resume heading */
+        h1 {
+            font-size: 54px;
+            margin-bottom: 10px;
+        }
+
+        /* Enlarge the navigation links */
+        nav ul li a {
+            font-size: 28px;
+        }
+
+        /* Enlarge the bottom "Return to home" link */
+        p a {
+            font-size: 24px;
+        }
+
+        /* Spacing for the list items */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
         a {
-            color: #00ffff; /* Bright Cyan */
+            color: #00ffff;
             text-decoration: none;
             font-weight: bold;
         }
@@ -25,12 +52,12 @@
             text-decoration: underline;
         }
 
-        /* Adds a semi-transparent box behind the header for extra readability */
         header {
             background: rgba(0, 0, 0, 0.5);
-            padding: 15px;
+            padding: 25px; /* Increased padding for the larger text */
             border-radius: 8px;
-            display: inline-block;
+            display: block; /* Changed to block to span the top better */
+            text-align: center;
         }
     </style>
 </head>
@@ -51,11 +78,11 @@
     <hr>
 
     <p>
-        <embed src="Mike LI Profile.pdf" type="application/pdf" width="100%" height="600px" />
+        <embed src="Mike LI Profile.pdf" type="application/pdf" width="100%" height="800px" />
     </p>
 
-    <p>
-        <a href="index.html">Click here to return to home:</a>
+    <p style="text-align: center;">
+        <a href="index.html">Click here to return to home</a>
     </p>
 
 </body>
