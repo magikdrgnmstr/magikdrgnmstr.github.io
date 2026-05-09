@@ -10,26 +10,54 @@
             background-position: center;
             color: white;
             font-family: sans-serif;
-            padding: 20px; /* Added for better spacing */
+            padding: 20px;
+            /* Enlarges the general base text */
+            font-size: 20px; 
         }
+
+        /* Enlarge the navigation links at the top */
+        nav a {
+            font-size: 26px; 
+            margin: 0 10px;
+        }
+
+        /* Style for all paragraph text */
+        p {
+            font-size: 22px;
+            line-height: 1.6; /* Adds space between lines for readability */
+        }
+
+        /* Specific style for your name */
+        .name-header {
+            font-size: 32px;
+            color: #ffffff;
+        }
+
         a {
             color: cyan;
             font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+
     <nav style="text-align: center; margin-bottom: 20px;">
         <a href="Home.html">Home</a> | 
         <a href="Certificates.html">Certificates</a> | 
         <a href="Contact.html">Contact</a>
     </nav>
+
     <hr>
 
-    <p><b>Michael Ludwig</b></p>
+    <p class="name-header"><b>Michael Ludwig</b></p>
+    <p>Proud owner of RT 9 East IT Services LLC.</p>
     <p>Welcomes you to his webpage.</p>
-    
-    <p>Please click on the image below to view my Resume:</p>
+    <p>Kindly click on the image below to view my Resume:</p>
 
     <div style="display: flex; justify-content: space-between; align-items: center;">
         <a href="Resume.html">
