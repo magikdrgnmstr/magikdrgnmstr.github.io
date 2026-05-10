@@ -55,18 +55,19 @@
             box-shadow: 0 0 20px rgba(0,0,0,0.5);
         }
 
+        /* Styling for the clickable email */
         .email-text {
             font-size: 1.8em;
             color: #00ffff;
             display: block;
             margin-top: 10px;
+            cursor: pointer;
         }
 
-        /* Styling for the professional profile links */
         .profile-link {
             font-size: 1.4em;
             display: block;
-            margin-top: 20px; 
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -86,12 +87,17 @@
 
     <main>
         <p>Feel free to reach out via email:</p>
-        <p><b class="email-text">michaell@rt9east-itservices.com</b></p>
         
+        <!-- Clickable mailto link added here -->
+        <p>
+            <a href="mailto:michaell@rt9east-itservices.com" class="email-text">
+                michaell@rt9east-itservices.com
+            </a>
+        </p>
+
         <p style="margin-top: 30px;">View my professional profiles:</p>
         
         <a href="https://app.fieldnation.com/p/247523" target="_blank" class="profile-link">Field Nation Profile</a>
-        
         <a href="https://www.linkedin.com/in/michael-ludwig-rt9east-it/" target="_blank" class="profile-link">LinkedIn Profile</a>
     </main>
 
