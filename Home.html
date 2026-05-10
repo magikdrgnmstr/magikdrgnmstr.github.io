@@ -13,9 +13,10 @@
             font-size: 18px;
         }
 
-        /* Specifically setting the 50px space above the logo */
+        /* This creates the exact 50px gap below the nav */
         .logo {
-            margin-top: 50px; 
+            display: block;
+            margin: 50px auto 0 auto; /* 50px top, auto left/right, 0 bottom */
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
         }
@@ -28,7 +29,7 @@
         ul {
             list-style-type: none;
             padding: 0;
-            margin-bottom: 0; /* Removed bottom margin to keep math exact */
+            margin-bottom: 0; 
         }
 
         li {
@@ -63,7 +64,7 @@
             </ul>
         </nav>
 
-        <!-- Logo sits exactly 50px below the nav -->
+        <!-- Verify the file name matches your folder exactly -->
         <img src="CompanyLogo2.jpg" alt="Company Logo" width="512" height="256" class="logo">
     </header>
 
