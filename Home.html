@@ -3,75 +3,93 @@
 <head>
     <title>RT 9 East IT Services LLC</title>
     <style>
-        body {
-            background-image: url("Ludovico 1.jpg");
-            background-size: cover;
-            background-attachment: fixed;
-            color: white;
-            font-family: sans-serif;
-            text-align: center;
-            font-size: 18px;
-            margin: 0;
-            padding: 0;
+        body { 
+            background-image: url("Ludovico 1.jpg"); 
+            background-size: cover; 
+            background-attachment: fixed; 
+            color: white; 
+            font-family: sans-serif; 
+            text-align: center; 
+            font-size: 18px; 
+            margin: 0; 
+            padding: 0; 
         }
-        .brand-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 40px;
-            padding: 20px;
-        }
-        .veteran-banner {
-            color: #cc0000;
-            font-size: 28px;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-        }
-        /* Side-by-side container for 3 columns */
-        .content-wrap {
-            display: flex;
+
+        .brand-section { 
+            display: flex; 
+            flex-direction: column; 
             align-items: center; 
-            justify-content: center;
-            gap: 30px;
-            max-width: 1200px;
-            width: 100%;
+            margin-top: 40px; 
+            padding: 20px; 
         }
-        .services-text {
-            text-align: left;
-            flex: 1; /* Makes both text boxes equal width */
-            max-width: 400px;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 5px solid #00ffff;
+
+        .veteran-banner { 
+            color: #cc0000; 
+            font-size: 28px; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            margin-bottom: 20px; 
+            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; 
         }
-        .services-text h3 {
-            margin-top: 0;
-            color: #00ffff;
-            font-size: 20px;
+
+        /* 3-Column Layout: Text | Logo | Text */
+        .content-wrap { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 20px; 
+            width: 95%;
+            max-width: 1400px;
         }
-        .services-text ul {
-            list-style-type: none;
-            padding: 0;
+
+        .services-column { 
+            text-align: left; 
+            flex: 1; 
+            max-width: 450px; 
+            background: rgba(0, 0, 0, 0.75); 
+            padding: 15px 20px; 
+            border-radius: 10px; 
+            box-sizing: border-box;
         }
-        .services-text li {
-            margin: 10px 0;
-            font-size: 15px;
-            line-height: 1.4;
+
+        /* Left column accent */
+        .left-col { border-left: 5px solid #00ffff; }
+        /* Right column accent */
+        .right-col { border-right: 5px solid #00ffff; }
+
+        .services-column h3 { 
+            margin: 15px 0 5px 0; 
+            color: #00ffff; 
+            font-size: 19px; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        .services-text strong {
-            color: #00ffff;
+        
+        .services-column h3:first-child { margin-top: 0; }
+
+        .services-column ul { list-style-type: none; padding: 0; margin: 0; }
+
+        .services-column li { 
+            margin: 8px 0; 
+            font-size: 14px; 
+            line-height: 1.4; 
         }
-        .logo {
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-            flex-shrink: 0;
+
+        .services-column strong { color: #00ffff; }
+
+        .logo { 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
+            flex-shrink: 0; 
+            width: 300px; /* Scaled slightly to fit 3 columns better */
+            height: auto;
         }
+
         h1 { font-size: 60px; margin-top: 50px; }
+        nav ul { list-style-type: none; padding: 0; }
         nav li { display: inline-block; margin: 0 15px; }
         a { color: #00ffff; text-decoration: none; font-weight: bold; font-size: 24px; }
+        a:hover { color: #ffffff; text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -86,30 +104,43 @@
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
-        
+
         <div class="brand-section">
             <div class="veteran-banner">Veteran Owned & Operated</div>
             
             <div class="content-wrap">
-                <!-- Column 1: Cybersecurity -->
-                <div class="services-text">
-                    <h3>🛡️ Cybersecurity & Information Assurance</h3>
+                <!-- Column 1: Cybersecurity & Network -->
+                <div class="services-column left-col">
+                    <h3>🛡️ Cybersecurity & Info Assurance</h3>
                     <ul>
                         <li><strong>Secure Information Assurance:</strong> Leveraging deep-rooted expertise to protect critical data.</li>
-                        <li><strong>Security-First Consulting:</strong> Specialized strategies focused on proactive cybersecurity for small businesses.</li>
+                        <li><strong>Security-First Consulting:</strong> Specialized strategies focused on proactive cybersecurity.</li>
                     </ul>
-                </div>
 
-                <!-- Column 2: The Logo -->
-                <img src="CompanyLogo2.jpg" alt="Company Logo" width="356" height="178" class="logo">
-
-                <!-- Column 3: Network & Infrastructure -->
-                <div class="services-text">
-                    <h3>🌐 Network & Infrastructure Management</h3>
+                    <h3>🌐 Network & Infrastructure</h3>
                     <ul>
                         <li><strong>Advanced Network Administration:</strong> Design and oversight of robust network systems.</li>
                         <li><strong>Infrastructure Design:</strong> Planning and building foundational hardware and software.</li>
-                        <li><strong>Active Directory Management:</strong> Expert handling of directory services for secure access.</li>
+                        <li><strong>Active Directory Management:</strong> Expert handling of directory services.</li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Centered Logo -->
+                <img src="CompanyLogo2.jpg" alt="Company Logo" class="logo">
+
+                <!-- Column 3: Systems & Consulting -->
+                <div class="services-column right-col">
+                    <h3>⚙️ Systems Deployment</h3>
+                    <ul>
+                        <li><strong>Full-Scale Deployments:</strong> End-to-end execution of new technology rollouts.</li>
+                        <li><strong>Data Center Migrations:</strong> Navigating complex transitions and moving data safely.</li>
+                        <li><strong>Elite Technical Support:</strong> High-level troubleshooting and maintenance.</li>
+                    </ul>
+
+                    <h3>📈 Strategic IT Consulting</h3>
+                    <ul>
+                        <li><strong>Enterprise-Level Insight:</strong> Strategic planning and tactical communications expertise.</li>
+                        <li><strong>Personalized IT Solutions:</strong> Tailored strategies designed for small businesses.</li>
                     </ul>
                 </div>
             </div>
