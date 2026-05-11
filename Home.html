@@ -1,174 +1,183 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RT 9 East IT Services LLC</title>
     <style>
-        body { 
-            background-image: url("Ludovico 1.jpg"); 
-            background-size: cover; 
-            background-attachment: fixed; 
-            color: white; 
-            font-family: sans-serif; 
-            text-align: center; 
-            font-size: 18px; 
-            margin: 0; 
-            padding: 0; 
+        body {
+            background-image: url("Ludovico 1.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-
-        .brand-section { 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            margin-top: 40px; 
-            padding: 20px; 
+        header {
+            flex: 1;
         }
-
-        .veteran-banner { 
-            color: #cc0000; 
-            font-size: 28px; 
-            font-weight: bold; 
-            text-transform: uppercase; 
-            margin-bottom: 20px; 
-            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; 
+        .brand-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            padding: 20px;
         }
-
-        /* The flex-start property ensures the TOP edges of all three elements align */
-        .content-wrap { 
-            display: flex; 
-            align-items: flex-start; 
-            justify-content: center; 
-            gap: 25px; 
+        .veteran-banner {
+            color: #cc0000;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+        }
+        .content-wrap {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 25px;
             width: 98%;
             max-width: 1400px;
         }
-
-        .services-column { 
-            text-align: left; 
-            flex: 1; 
-            max-width: 420px; 
-            background: rgba(0, 0, 0, 0.75); 
-            padding: 20px; 
-            border-radius: 10px; 
+        .services-column {
+            text-align: left;
+            flex: 1;
+            max-width: 420px;
+            background: rgba(0, 0, 0, 0.75);
+            padding: 20px;
+            border-radius: 10px;
             box-sizing: border-box;
-            border-top: 3px solid #00ffff; /* Added top accent to emphasize the straight line */
+            border-top: 3px solid #00ffff;
         }
-
-        .services-column h3 { 
-            margin: 0 0 10px 0; 
-            color: #00ffff; 
-            font-size: 18px; 
+        .services-column h3 {
+            margin: 0 0 10px 0;
+            color: #00ffff;
+            font-size: 18px;
             text-transform: uppercase;
         }
-        
         .services-column h4 {
             color: #00ffff;
             margin: 15px 0 5px 0;
             font-size: 16px;
         }
-
-        .services-column ul { list-style-type: none; padding: 0; margin: 0; }
-
-        .services-column li { 
-            margin: 8px 0; 
-            font-size: 14px; 
-            line-height: 1.4; 
+        .services-column ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
         }
-
-        .services-column strong { color: #00ffff; }
-
-        .logo { 
-            border-radius: 8px; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
-            flex-shrink: 0; 
-            width: 320px; 
+        .services-column li {
+            margin: 8px 0;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        .services-column strong {
+            color: #00ffff;
+        }
+        .logo {
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            flex-shrink: 0;
+            width: 320px;
             height: auto;
-            margin: 0; /* Ensures no extra spacing at the top */
+            margin: 0;
         }
-
-        h1 { 
-    font-size: 60px; 
-    margin-top: 50px; 
-    color: #cc0000; /* Professional Red */
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; /* White outline to match your banner */
-} 
-
-nav ul { 
-    list-style-type: none; 
-    padding: 0; 
-} 
-
-nav li { 
-    display: inline-block; 
-    margin: 0 15px; 
-} 
-
-a { 
-    color: #00ffff; 
-    text-decoration: none; 
-    font-weight: bold; 
-    font-size: 24px; 
-} 
-
-a:hover { 
-    color: #ffffff; 
-    text-decoration: underline; 
-} 
-</style> 
-</head> 
-<body> 
-<header> 
-    <h1>RT 9 East IT Services LLC.</h1> 
-    <nav> 
+        h1 {
+            font-size: 60px;
+            margin-top: 50px;
+            color: #cc0000;
+            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 20px 0;
+            margin-top: 50px;
+            font-size: 14px;
+            border-top: 1px solid #444;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>RT 9 East IT Services LLC.</h1>
+    <nav>
         <ul>
-
-                <li><a href="Welcome.html">Welcome</a></li>
-                <li><a href="CompanyBackground.html">Company Background</a></li>
-                <li><a href="Resume.html">Resume</a></li>
-                <li><a href="Certificates.html">Certificates</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="brand-section">
-            <div class="veteran-banner">Veteran Owned & Operated</div>
-            
-            <div class="content-wrap">
-                <!-- LEFT BOX -->
-                <div class="services-column">
-                    <h3>🛡️ Cybersecurity & Info Assurance</h3>
-                    <ul>
-                        <li><strong>Secure Info Assurance:</strong> Leveraging deep-rooted expertise to protect critical data.</li>
-                        <li><strong>Security-First Consulting:</strong> Specialized strategies for proactive cybersecurity.</li>
-                    </ul>
-
-                    <h4>🌐 Network & Infrastructure</h4>
-                    <ul>
-                        <li><strong>Advanced Network Admin:</strong> Design and oversight of robust network systems.</li>
-                        <li><strong>Infrastructure Design:</strong> Planning and building foundational hardware.</li>
-                        <li><strong>Active Directory:</strong> Expert handling of directory services.</li>
-                    </ul>
-                </div>
-
-                <!-- CENTER LOGO (Top-aligned) -->
-                <img src="CompanyLogo3.jpg" alt="Company Logo" class="logo">
-
-                <!-- RIGHT BOX -->
-                <div class="services-column">
-                    <h3>⚙️ Systems Deployment</h3>
-                    <ul>
-                        <li><strong>Full-Scale Deployments:</strong> End-to-end execution of new technology rollouts.</li>
-                        <li><strong>Data Center Migrations:</strong> Navigating complex transitions safely.</li>
-                        <li><strong>Elite Tech Support:</strong> High-level troubleshooting and maintenance.</li>
-                    </ul>
-
-                    <h4>📈 Strategic IT Consulting</h4>
-                    <ul>
-                        <li><strong>Enterprise Insight:</strong> Strategic planning and tactical field expertise.</li>
-                        <li><strong>Personalized IT Solutions:</strong> Tailored strategies for small businesses.</li>
-                    </ul>
-                </div>
+            <li><a href="Welcome.html">Welcome</a></li>
+            <li><a href="CompanyBackground.html">Company Background</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="Certificates.html">Certificates</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="brand-section">
+        <div class="veteran-banner">Veteran Owned & Operated</div>
+        <div class="content-wrap">
+            <!-- LEFT BOX -->
+            <div class="services-column">
+                <h3>🛡️ Cybersecurity & Info Assurance</h3>
+                <ul>
+                    <li><strong>Secure Info Assurance:</strong> Leveraging deep-rooted expertise to protect critical data.</li>
+                    <li><strong>Security-First Consulting:</strong> Specialized strategies for proactive cybersecurity.</li>
+                </ul>
+                <h4>🌐 Network & Infrastructure</h4>
+                <ul>
+                    <li><strong>Advanced Network Admin:</strong> Design and oversight of robust network systems.</li>
+                    <li><strong>Infrastructure Design:</strong> Planning and building foundational hardware.</li>
+                    <li><strong>Active Directory:</strong> Expert handling of directory services.</li>
+                </ul>
+            </div>
+            <!-- CENTER LOGO -->
+            <img src="CompanyLogo3.jpg" alt="Company Logo" class="logo">
+            <!-- RIGHT BOX -->
+            <div class="services-column">
+                <h3>⚙️ Systems Deployment</h3>
+                <ul>
+                    <li><strong>Full-Scale Deployments:</strong> End-to-end execution of new technology rollouts.</li>
+                    <li><strong>Data Center Migrations:</strong> Navigating complex transitions safely.</li>
+                    <li><strong>Elite Tech Support:</strong> High-level troubleshooting and maintenance.</li>
+                </ul>
+                <h4>📈 Strategic IT Consulting</h4>
+                <ul>
+                    <li><strong>Enterprise Insight:</strong> Strategic planning and tactical field expertise.</li>
+                    <li><strong>Personalized IT Solutions:</strong> Tailored strategies for small businesses.</li>
+                </ul>
             </div>
         </div>
-    </header>
+    </div>
+</header>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2026 RT 9 East IT Services LLC. All Rights Reserved.</p>
+        <p>Providing Precision IT Solutions with Veteran Integrity.</p>
+    </div>
+</footer>
+
 </body>
 </html>
