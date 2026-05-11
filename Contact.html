@@ -14,29 +14,32 @@
             font-size: 22px;
         }
 
-        /* 🍊 Header changed to Orange */
         h1 {
             font-size: 4em !important;
             margin-bottom: 20px;
             color: orange;
         }
 
-        /* 🌟 Nav links changed to Yellow */
         nav ul li a {
             font-size: 1.5em;
             margin: 0 10px;
             color: yellow;
         }
 
+        /* 🌟 Standard paragraph text in the main box changed to Yellow */
+        p {
+            color: yellow;
+        }
+
         a {
-            color: #cc0000; /* Use red for body links (Email/Profiles) */
+            color: #cc0000;
             text-decoration: none;
             font-weight: bold;
         }
 
         a:hover {
             color: #ffffff;
-            text-shadow: 0 0 10px #00ffff;
+            text-shadow: 0 0 10px #ff8c00;
         }
 
         ul {
@@ -51,12 +54,12 @@
 
         main {
             background: rgba(0, 0, 0, 0.75);
-            border: 2px solid #00ffff;
+            border: 3px solid orange;
             padding: 40px;
             border-radius: 15px;
             display: inline-block;
             margin-top: 50px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
         }
 
         .email-text {
@@ -69,10 +72,15 @@
 
         .profile-link {
             font-size: 1.4em;
-            color: #0077B5;
+            color: #0077B5; 
             display: block;
             margin-top: 20px;
         }
+
+        .field-nation {
+            color: orange !important;
+        }
+
     </style>
 </head>
 <body>
@@ -98,8 +106,10 @@
         </p>
 
         <p style="margin-top: 30px;">View my professional profiles:</p>
-        <a href="https://app.fieldnation.com/p/247523" target="_blank" class="profile-link">Field Nation Profile</a>
-        <a href="https://www.linkedin.com/in/michael-ludwig-rt9east-it/" target="_blank" class="profile-link">LinkedIn Profile</a>
+        
+        <a href="https://fieldnation.com" target="_blank" class="profile-link field-nation">Field Nation Profile</a>
+        
+        <a href="https://linkedin.com" target="_blank" class="profile-link">LinkedIn Profile</a>
     </main>
 </body>
 </html>
