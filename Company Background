@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CypherLync LLC | Company Background</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #002e5d;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #002e5d;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            color: #002e5d;
+        }
+        .highlight-box {
+            background: #eef4f8;
+            padding: 20px;
+            border-left: 5px solid #002e5d;
+            margin-top: 30px;
+        }
+        ul {
+            list-style-type: square;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CypherLync LLC</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#welcome">Welcome</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="background">
+            <h2>Company Background</h2>
+            <p>
+                Established in 2016, <strong>CypherLync LLC</strong> is a veteran-owned and operated IT consulting firm dedicated to providing elite technical support and cybersecurity solutions. Founded by Michael Ludwig, a decorated U.S. Army veteran with <strong>over 30 years of experience</strong> in the information technology sector, CypherLync was built on the principles of precision, reliability, and service excellence.
+            </p>
+            <p>
+                Michael’s extensive career began in 1993, spanning decades of specialized service within the U.S. Army Signal Regiment and top-tier global technology firms like Dell EMC. His deep-rooted expertise includes advanced network administration, infrastructure design, and secure information assurance. This unique combination of military discipline and enterprise-level technical proficiency allows CypherLync to offer a level of insight and strategic planning rarely found in the consulting space.
+            </p>
+            <p>
+                At CypherLync, we believe that robust technology is the backbone of every successful business. We specialize in helping organizations navigate complex IT landscapes—from data center migrations and Active Directory management to full-scale systems deployments. Our mission is to bridge the gap between sophisticated technology and seamless customer experience, ensuring your operations remain secure, efficient, and future-ready.
+            </p>
+        </section>
+
+        <hr>
+
+        <section class="highlight-box">
+            <h3>Key Company Highlights</h3>
+            <ul>
+                <li><strong>Veteran Owned & Operated:</strong> We bring military-grade discipline and integrity to every project.</li>
+                <li><strong>30+ Years of Expertise:</strong> Extensive experience ranging from tactical field communications to global corporate desktop support.</li>
+                <li><strong>Security-First Approach:</strong> Focused on Information Assurance and Cybersecurity to protect your most critical data.</li>
+                <li><strong>Personalized Solutions:</strong> Tailored IT strategies designed specifically for small businesses and specialized industries.</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
