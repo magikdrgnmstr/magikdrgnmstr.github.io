@@ -32,40 +32,39 @@
             text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; 
         }
 
-        /* 3-Column Layout: Text | Logo | Text */
+        /* The flex-start property ensures the TOP edges of all three elements align */
         .content-wrap { 
             display: flex; 
-            align-items: center; 
+            align-items: flex-start; 
             justify-content: center; 
-            gap: 20px; 
-            width: 95%;
+            gap: 25px; 
+            width: 98%;
             max-width: 1400px;
         }
 
         .services-column { 
             text-align: left; 
             flex: 1; 
-            max-width: 450px; 
+            max-width: 420px; 
             background: rgba(0, 0, 0, 0.75); 
-            padding: 15px 20px; 
+            padding: 20px; 
             border-radius: 10px; 
             box-sizing: border-box;
+            border-top: 3px solid #00ffff; /* Added top accent to emphasize the straight line */
         }
-
-        /* Left column accent */
-        .left-col { border-left: 5px solid #00ffff; }
-        /* Right column accent */
-        .right-col { border-right: 5px solid #00ffff; }
 
         .services-column h3 { 
-            margin: 15px 0 5px 0; 
+            margin: 0 0 10px 0; 
             color: #00ffff; 
-            font-size: 19px; 
+            font-size: 18px; 
             text-transform: uppercase;
-            letter-spacing: 1px;
         }
         
-        .services-column h3:first-child { margin-top: 0; }
+        .services-column h4 {
+            color: #00ffff;
+            margin: 15px 0 5px 0;
+            font-size: 16px;
+        }
 
         .services-column ul { list-style-type: none; padding: 0; margin: 0; }
 
@@ -81,8 +80,9 @@
             border-radius: 8px; 
             box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
             flex-shrink: 0; 
-            width: 300px; /* Scaled slightly to fit 3 columns better */
+            width: 320px; 
             height: auto;
+            margin: 0; /* Ensures no extra spacing at the top */
         }
 
         h1 { font-size: 60px; margin-top: 50px; }
@@ -109,38 +109,38 @@
             <div class="veteran-banner">Veteran Owned & Operated</div>
             
             <div class="content-wrap">
-                <!-- Column 1: Cybersecurity & Network -->
-                <div class="services-column left-col">
+                <!-- LEFT BOX -->
+                <div class="services-column">
                     <h3>🛡️ Cybersecurity & Info Assurance</h3>
                     <ul>
-                        <li><strong>Secure Information Assurance:</strong> Leveraging deep-rooted expertise to protect critical data.</li>
-                        <li><strong>Security-First Consulting:</strong> Specialized strategies focused on proactive cybersecurity.</li>
+                        <li><strong>Secure Info Assurance:</strong> Leveraging deep-rooted expertise to protect critical data.</li>
+                        <li><strong>Security-First Consulting:</strong> Specialized strategies for proactive cybersecurity.</li>
                     </ul>
 
-                    <h3>🌐 Network & Infrastructure</h3>
+                    <h4>🌐 Network & Infrastructure</h4>
                     <ul>
-                        <li><strong>Advanced Network Administration:</strong> Design and oversight of robust network systems.</li>
-                        <li><strong>Infrastructure Design:</strong> Planning and building foundational hardware and software.</li>
-                        <li><strong>Active Directory Management:</strong> Expert handling of directory services.</li>
+                        <li><strong>Advanced Network Admin:</strong> Design and oversight of robust network systems.</li>
+                        <li><strong>Infrastructure Design:</strong> Planning and building foundational hardware.</li>
+                        <li><strong>Active Directory:</strong> Expert handling of directory services.</li>
                     </ul>
                 </div>
 
-                <!-- Column 2: Centered Logo -->
+                <!-- CENTER LOGO (Top-aligned) -->
                 <img src="CompanyLogo2.jpg" alt="Company Logo" class="logo">
 
-                <!-- Column 3: Systems & Consulting -->
-                <div class="services-column right-col">
+                <!-- RIGHT BOX -->
+                <div class="services-column">
                     <h3>⚙️ Systems Deployment</h3>
                     <ul>
                         <li><strong>Full-Scale Deployments:</strong> End-to-end execution of new technology rollouts.</li>
-                        <li><strong>Data Center Migrations:</strong> Navigating complex transitions and moving data safely.</li>
-                        <li><strong>Elite Technical Support:</strong> High-level troubleshooting and maintenance.</li>
+                        <li><strong>Data Center Migrations:</strong> Navigating complex transitions safely.</li>
+                        <li><strong>Elite Tech Support:</strong> High-level troubleshooting and maintenance.</li>
                     </ul>
 
-                    <h3>📈 Strategic IT Consulting</h3>
+                    <h4>📈 Strategic IT Consulting</h4>
                     <ul>
-                        <li><strong>Enterprise-Level Insight:</strong> Strategic planning and tactical communications expertise.</li>
-                        <li><strong>Personalized IT Solutions:</strong> Tailored strategies designed for small businesses.</li>
+                        <li><strong>Enterprise Insight:</strong> Strategic planning and tactical field expertise.</li>
+                        <li><strong>Personalized IT Solutions:</strong> Tailored strategies for small businesses.</li>
                     </ul>
                 </div>
             </div>
