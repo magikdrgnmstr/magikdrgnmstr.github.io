@@ -1,61 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- 1. This sets the text on the browser tab -->
     <title>RT 9 East IT Services LLC</title>
-
-    <!-- 2. These tags fix the iMessage / Link preview display -->
     <meta property="og:title" content="RT 9 East IT Services LLC">
     <meta property="og:description" content="Professional IT Field Services and Solutions.">
     <meta property="og:url" content="https://www.rt9east-itservices.com/Home.html">
     <meta property="og:image" content="https://rt9east-itservices.com">
     <meta property="og:type" content="website">
-
     <style>
-        body {
-            background-image: url("Ludovico 1.jpg");
-            background-size: cover;
-            background-attachment: fixed;
-            color: white;
-            font-family: sans-serif;
-            text-align: center;
-            font-size: 18px;
+        body { 
+            background-image: url("Ludovico 1.jpg"); 
+            background-size: cover; 
+            background-attachment: fixed; 
+            color: white; 
+            font-family: sans-serif; 
+            text-align: center; 
+            font-size: 18px; 
+            margin: 0;
+            padding: 0;
         }
 
-        .logo {
-            display: block;
-            margin: 50px auto 0 auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        /* Container for everything below the nav */
+        .brand-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            padding: 20px;
         }
 
-        h1 {
-            font-size: 60px;
-            margin-top: 50px;
+        /* The Red Banner */
+        .veteran-banner {
+            color: #cc0000;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
         }
 
-        ul {
+        /* Side-by-side container */
+        .content-wrap {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1100px;
+        }
+
+        /* Services Text Box */
+        .services-text {
+            text-align: left;
+            max-width: 500px;
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent black for readability */
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #00ffff;
+        }
+
+        .services-text h3 {
+            margin-top: 0;
+            color: #00ffff;
+            font-size: 22px;
+        }
+
+        .services-text ul {
             list-style-type: none;
             padding: 0;
-            margin-bottom: 0;
+            text-align: left;
         }
 
-        li {
-            display: inline-block;
-            margin: 0 15px;
+        .services-text li {
+            display: block; /* Stack items vertically */
+            margin: 10px 0;
+            font-size: 16px;
+            line-height: 1.4;
         }
 
-        a {
+        .services-text strong {
             color: #00ffff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 24px;
         }
 
-        a:hover {
-            color: #ffffff;
-            text-decoration: underline;
+        .logo { 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            flex-shrink: 0;
         }
+
+        h1 { font-size: 60px; margin-top: 50px; }
+        nav ul { list-style-type: none; padding: 0; margin-bottom: 0; }
+        nav li { display: inline-block; margin: 0 15px; }
+        a { color: #00ffff; text-decoration: none; font-weight: bold; font-size: 24px; }
+        a:hover { color: #ffffff; text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -70,7 +106,31 @@
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
-        <img src="CompanyLogo2.jpg" alt="Company Logo" width="356" height="178" class="logo">
+
+        <div class="brand-section">
+            <div class="veteran-banner">Veteran Owned & Operated</div>
+            
+            <div class="content-wrap">
+                <!-- Services on the left -->
+                <div class="services-text">
+                    <h3>🛡️ Cybersecurity & Assurance</h3>
+                    <ul>
+                        <li><strong>Secure Information Assurance:</strong> Leveraging deep-rooted expertise to protect critical data.</li>
+                        <li><strong>Security-First Consulting:</strong> Specialized strategies focused on proactive cybersecurity for small businesses.</li>
+                    </ul>
+
+                    <h3>🌐 Network & Infrastructure</h3>
+                    <ul>
+                        <li><strong>Advanced Network Administration:</strong> Design and oversight of robust network systems.</li>
+                        <li><strong>Infrastructure Design:</strong> Planning and building foundational hardware and software.</li>
+                        <li><strong>Active Directory Management:</strong> Expert handling of directory services for secure access.</li>
+                    </ul>
+                </div>
+
+                <!-- Logo on the right -->
+                <img src="CompanyLogo2.jpg" alt="Company Logo" width="356" height="178" class="logo">
+            </div>
+        </div>
     </header>
 </body>
 </html>
