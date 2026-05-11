@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Resume - Michael Ludwig</title>
+    <!-- Added Font Awesome for the LinkedIn Icon -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         body {
             background-image: url("R2-01001-0019.jpg");
@@ -10,81 +12,95 @@
             color: white;
             font-family: sans-serif;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-            /* Base text size */
             font-size: 20px;
         }
 
-        /* Enlarge the main Resume heading */
+        /* 🎓 Header in GoldenYellow */
         h1 {
             font-size: 54px;
             margin-bottom: 10px;
+            color: GoldenYellow;
         }
 
-        /* Enlarge the navigation links */
+        /* 🍊 Navigation links in Orange */
         nav ul li a {
             font-size: 28px;
-        }
-
-        /* Enlarge the bottom "Return to home" link */
-        p a {
-            font-size: 24px;
-        }
-
-        /* Spacing for the list items */
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            display: inline-block;
-            margin: 10px 20px;
-        }
-
-        a {
-            color: #00ffff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: white;
-            text-decoration: underline;
+            color: Orange;
         }
 
         header {
             background: rgba(0, 0, 0, 0.5);
-            padding: 25px; /* Increased padding for the larger text */
+            padding: 25px;
             border-radius: 8px;
-            display: block; /* Changed to block to span the top better */
+            display: block;
             text-align: center;
         }
+
+        /* 🖼️ Dark Grey Border for the Resume PDF */
+        .pdf-frame {
+            border: 8px solid #2f2f2f;
+            border-radius: 5px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+            margin: 20px auto;
+            width: 95%;
+            display: block;
+        }
+
+        /* 🔗 LinkedIn Button Styles */
+        .linkedin-btn {
+            display: inline-block;
+            background-color: #0077B5; /* Official LinkedIn Blue */
+            color: white !important;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 22px;
+            text-decoration: none;
+            margin: 20px 0;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .linkedin-btn:hover {
+            background-color: #00a0dc;
+            box-shadow: 0 0 15px #00ffff; /* Cyber glow effect */
+            transform: scale(1.05);
+        }
+
+        nav ul { list-style: none; padding: 0; }
+        nav li { display: inline-block; margin: 0 20px; }
+        a { color: #00ffff; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Michael Ludwig's Resume</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="CompanyBackground.html">Company Background</a></li>
-                <li><a href="Welcome.html">Welcome</a></li>
-                <li><a href="Certificates.html">Certificates</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <h1>Michael Ludwig's Resume</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="CompanyBackground.html">Company Background</a></li>
+            <li><a href="Welcome.html">Welcome</a></li>
+            <li><a href="Certificates.html">Certificates</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <hr>
+<hr>
 
-    <p>
-        <embed src="Mike LI Profile.pdf" type="application/pdf" width="100%" height="800px" />
-    </p>
+<div class="pdf-frame">
+    <embed src="Mike LI Profile.pdf" type="application/pdf" width="100%" height="800px" />
+</div>
 
-    <p style="text-align: center;">
-        <a href="index.html">Click here to return to home</a>
-    </p>
+<div style="text-align: center; margin-bottom: 40px;">
+    <!-- LinkedIn profile bellow -->
+    <a href="https://www.linkedin.com/in/michael-ludwig-rt9east-it/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bf2PUO9%2BES2GJfLsZwpDr6A%3D%3D" target="_blank" class="linkedin-btn">
+        <i class="fab fa-linkedin"></i> View My Live LinkedIn Profile
+    </a>
+    <br>
+    <a href="index.html" style="font-size: 24px; color: #00ffff;">Click here to return to home</a>
+</div>
 
 </body>
 </html>
