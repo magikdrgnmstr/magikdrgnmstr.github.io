@@ -14,23 +14,48 @@
             font-size: 20px;
         }
 
-        /* Enlarge the navigation links at the top */
+        /* Container for the 1994 photo and its caption */
+        .top-right-container {
+            position: absolute;
+            top: 100px; 
+            right: 40px;
+            text-align: center;
+            width: 400px;
+        }
+
+        .top-right-img {
+            border: 5px solid #D55102; /* Orange border to match your theme */
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+            width: 100%;
+            height: auto;
+        }
+
+        .img-caption {
+            background: rgba(0, 0, 0, 0.6); /* Translucent background */
+            color: white;
+            padding: 8px;
+            margin-top: 5px;
+            font-size: 18px;
+            border-radius: 4px;
+            border: 1px solid #D55102;
+        }
+
         nav a {
             font-size: 26px;
             margin: 0 10px;
         }
 
-        /* Style for all paragraph text */
         p {
             font-size: 22px;
             line-height: 1.6;
-            color: #D55102; /* This keeps your main text orange */
+            color: #D55102;
+            max-width: 55%; /* Keeping text clear of the right-side image */
         }
 
-        /* Specific style for your name - UPDATED TO ORANGE */
         .name-header {
-            font-size: 40px; /* Increased size to make it a true header */
-            color: #D55102; /* Changed from #ffffff to orange */
+            font-size: 40px;
+            color: #D55102;
             margin-top: 20px;
         }
 
@@ -54,10 +79,15 @@
         <a href="Contact.html">Contact</a>
     </nav>
 
+    <!-- NEW: Top right image container with caption -->
+    <div class="top-right-container">
+        <img src="R1-01003-0008.jpg" alt="Mike 1994" class="top-right-img">
+        <div class="img-caption">Michael Ludwig - 1994</div>
+    </div>
+
     <hr>
 
     <p class="name-header"><b>Hi, I'm Michael Ludwig</b></p>
-
     <p>The very proud owner of RT 9 East IT Services LLC.</p>
     <p>I welcome you to the webpage I designed.</p>
     <p>It was designed by me to show that besides being an experienced</p>
@@ -66,11 +96,10 @@
 
     <p>Kindly click on the image below to view my Resume:</p>
 
-    <div style="display: flex; justify-content: space-between; align-items: center;">
+    <div style="margin-top: 40px;">
         <a href="Resume.html">
             <img src="MikeEmoji.jpg" alt="Mike's Photo" width="350" height="500">
         </a>
-        <img src="R1-01003-0008.jpg" alt="Mike 1994" width="400">
     </div>
 
 </body>
