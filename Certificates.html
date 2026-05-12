@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Certificates - Michael Ludwig</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         body {
             background-image: url("R2-01001-0019.jpg");
@@ -9,97 +11,121 @@
             background-attachment: fixed;
             color: white;
             font-family: sans-serif;
-            text-align: center;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
             font-size: 20px;
         }
-
-        /* 🎓 Visible Heading changed to Yellow */
+        /* 🎓 Heading changed to Yellow */
         h1 {
             font-size: 50px;
             margin-bottom: 15px;
             color: yellow;
+            text-align: center;
         }
-
         /* 🍊 Navigation links in Orange */
         nav ul li a {
             font-size: 26px;
             color: Orange;
         }
-
-        /* 🌟 Sub-heading text changed to Yellow */
-        p {
-            color: yellow;
-        }
-
         header {
             background: rgba(0, 0, 0, 0.5);
             padding: 20px;
             border-radius: 10px;
-            display: inline-block;
-            margin-top: 20px;
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            width: fit-content;
+        }
+        nav ul { list-style: none; padding: 0; margin-top: 10px; }
+        nav li { display: inline-block; margin: 0 15px; }
+
+        /* 📦 Main layout container */
+        .main-content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 30px;
+            padding: 20px;
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 10px;
-        }
-
-        nav li {
-            display: inline-block;
-            margin: 0 15px;
-        }
-
+        /* 🖼️ PDF Viewer aligned left */
         .pdf-viewer {
             border: 8px solid #2f2f2f;
             border-radius: 5px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.5);
-            margin: 20px auto;
-            width: 95%;
+            width: 60%; 
+            background: rgba(0,0,0,0.3);
         }
 
-        a {
-            color: #00ffff;
-            font-weight: bold;
+        /* 📝 Sidebar for future content */
+        .sidebar {
+            width: 35%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #00ffff;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-size: 20px;
             text-decoration: none;
+            margin: 10px 0;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            font-weight: bold;
+            width: 85%;
+            text-align: center;
         }
+        .download-btn { background-color: #28a745; color: white !important; }
+        .btn:hover { box-shadow: 0 0 15px #00ffff; transform: scale(1.05); }
 
-        a:hover {
-            color: white;
-            text-decoration: underline;
-        }
-
-        .footer-link {
-            font-size: 24px;
-            display: block;
-            margin-top: 20px;
-        }
+        a { color: #00ffff; font-weight: bold; text-decoration: none; }
+        a:hover { color: white; text-decoration: underline; }
+        
+        .footer-link { font-size: 24px; display: block; margin-top: 20px; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Michael A Ludwig's Certifications</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Welcome.html">Welcome</a></li>
-                <li><a href="CompanyBackground.html">Company Background</a></li>
-                <li><a href="Resume.html">Resume</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <hr>
-    
-    <p>Please view my professional certifications below:</p>
 
+<header>
+    <h1>Michael A Ludwig's Certifications</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Welcome.html">Welcome</a></li>
+            <li><a href="CompanyBackground.html">Company Background</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+
+<div class="main-content">
+    <!-- LEFT SIDE: Certificates PDF -->
     <div class="pdf-viewer">
-        <embed src="Mike Certs.pdf" type="application/pdf" width="100%" height="800px" />
+        <embed src="Mike Certs.pdf" type="application/pdf" width="100%" height="700px" />
     </div>
 
-    <p>
-        <a href="index.html" class="footer-link">Click here to return to home</a>
-    </p>
+    <!-- RIGHT SIDE: Future links/text -->
+    <div class="sidebar">
+        <p style="color: yellow; font-weight: bold;">Certification Options:</p>
+        
+        <a href="Mike Certs.pdf" download class="btn download-btn">
+            <i class="fas fa-file-download"></i> Download All Certs
+        </a>
+
+        <div style="margin-top: 30px;">
+            <p style="color: Orange;"><b>Quick Info:</b></p>
+            <p style="font-size: 18px;">This space is reserved for descriptions of your credentials or additional verification links.</p>
+        </div>
+
+        <a href="index.html" class="footer-link">Return to home</a>
+    </div>
+</div>
+
 </body>
 </html>
