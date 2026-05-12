@@ -2,10 +2,12 @@
 <html>
 <head>
     <title>Resume - Michael Ludwig</title>
+    <!-- Font Awesome link for icons -->
     <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         body {
-            background-image: url("R2-01001-0019.jpg");
+            /* 🖼️ Background image updated as requested */
+            background-image: url("MESPhereSS.jpg");
             background-size: cover;
             background-attachment: fixed;
             color: white;
@@ -13,57 +15,55 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
             font-size: 20px;
         }
-        h1 { font-size: 54px; margin-bottom: 10px; color: yellow; text-align: center; }
-        nav ul li a { font-size: 28px; color: Orange; }
-        header { background: rgba(0, 0, 0, 0.5); padding: 25px; border-radius: 8px; text-align: center; }
+        /* 🎓 Header in Yellow */
+        h1 {
+            font-size: 54px;
+            margin-bottom: 10px;
+            color: yellow;
+            text-align: center;
+        }
+        /* 🍊 Navigation links in Orange */
+        nav ul li a {
+            font-size: 28px;
+            color: Orange;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 25px;
+            border-radius: 8px;
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            width: fit-content;
+        }
+        nav ul { list-style: none; padding: 0; }
+        nav li { display: inline-block; margin: 0 20px; }
         
-        /* 📦 The Container for the two columns */
+        /* 📦 Main layout container */
         .main-content {
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
-            gap: 30px; /* Space between PDF and Sidebar */
+            gap: 30px;
             padding: 20px;
         }
 
-        /* 🖼️ PDF Frame restricted and aligned left */
+        /* 🖼️ PDF Frame aligned left with reduced size */
         .pdf-frame {
             border: 8px solid #2f2f2f;
             border-radius: 5px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.5);
-            width: 60%; /* Adjusted width to leave room on right */
+            width: 60%; 
             background: rgba(0,0,0,0.3);
         }
 
-        /* 📝 Sidebar for future links/text */
+        /* 📝 Sidebar is now empty and blank */
         .sidebar {
-            width: 35%; 
-            background: rgba(0, 0, 0, 0.4);
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid #00ffff;
+            width: 35%;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            border-radius: 30px;
-            font-size: 20px;
-            text-decoration: none;
-            margin: 10px 0;
-            transition: 0.3s;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-            font-weight: bold;
-            width: 80%; /* Makes buttons fit the sidebar nicely */
-            text-align: center;
-        }
-        .linkedin-btn { background-color: #0077B5; color: white !important; }
-        .download-btn { background-color: #28a745; color: white !important; }
-        .btn:hover { box-shadow: 0 0 15px #00ffff; transform: scale(1.05); }
-
-        nav ul { list-style: none; padding: 0; }
-        nav li { display: inline-block; margin: 0 20px; }
         a { color: #00ffff; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -83,32 +83,18 @@
 
 <hr>
 
-<!-- COLUMN WRAPPER -->
 <div class="main-content">
-    
-    <!-- LEFT SIDE: PDF -->
+    <!-- LEFT SIDE: Resume PDF -->
     <div class="pdf-frame">
         <embed src="Mike LI Profile.pdf" type="application/pdf" width="100%" height="700px" />
     </div>
 
-    <!-- RIGHT SIDE: Sidebar for future content -->
-    <div class="sidebar">
-        <h2 style="color: yellow;">Quick Links</h2>
-        <a href="https://linkedin.com" target="_blank" class="btn linkedin-btn">
-            <i class="fab fa-linkedin"></i> LinkedIn Profile
-        </a>
-        <a href="Mike LI Profile.pdf" download class="btn download-btn">
-            <i class="fas fa-file-download"></i> Download Resume
-        </a>
-        
-        <p style="margin-top: 20px;">
-            <b style="color: Orange;">Future Content:</b><br>
-            You can now add extra descriptions, contact info, or technical skills lists in this space!
-        </p>
+    <!-- RIGHT SIDE: Blank space -->
+    <div class="sidebar"></div>
+</div>
 
-        <a href="index.html" style="font-size: 20px; color: #00ffff;">Return to Home</a>
-    </div>
-
+<div style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
+    <a href="index.html" style="font-size: 24px; color: #00ffff;">Click here to return to home</a>
 </div>
 
 </body>
