@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hardware Store - RT 9 East IT Services LLC</title>
+    <!-- Font Awesome link for modern store icons -->
+    <link rel="stylesheet" href="cloudflare.com">
+    <style>
+        body {
+            background-image: url("MESPhereSS.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            font-family: sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            font-size: 20px;
+        }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 5px;
+            color: yellow;
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            color: #00ffff;
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .disclosure {
+            font-size: 14px;
+            color: #ccc;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            text-align: center;
+            line-height: 1.4;
+            background: rgba(0,0,0,0.5);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav ul li a {
+            font-size: 26px;
+            color: Orange;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            width: fit-content;
+        }
+        nav ul { list-style: none; padding: 0; margin-top: 10px; }
+        nav li { display: inline-block; margin: 0 15px; }
+
+        /* 📦 Responsive Store Grid Container */
+        .store-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 🛒 Individual Product Cards */
+        .product-card {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #2f2f2f;
+            border-radius: 10px;
+            padding: 20px;
+            width: 28%;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: 0.3s;
+            box-sizing: border-box;
+        }
+        .product-card:hover {
+            border: 1px solid #00ffff;
+            transform: translateY(-5px);
+        }
+        .product-card h3 {
+            color: yellow;
+            font-size: 22px;
+            margin: 0 0 10px 0;
+            min-height: 55px;
+        }
+        .category-tag {
+            color: Orange;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        .product-card p {
+            font-size: 16px;
+            line-height: 1.4;
+            color: #e0e0e0;
+            margin: 0 0 20px 0;
+            min-height: 110px;
+        }
+
+        /* 🟢 Amazon/External Merchant Button Utilities */
+        .shop-btn {
+            display: block;
+            padding: 12px;
+            border-radius: 20px;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            background-color: #ff9900; /* Signature Amazon Yellow/Orange */
+            color: black !important;
+        }
+        .shop-btn:hover {
+            box-shadow: 0 0 15px #00ffff;
+            background-color: #ffb347;
+            text-decoration: none;
+        }
+
+        a { color: #00ffff; font-weight: bold; text-decoration: none; }
+        a:hover { color: white; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>RT 9 East IT Services LLC</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Welcome.html">Welcome</a></li>
+            <li><a href="CompanyBackground.html">Company Background</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="Certificates.html">Certificates</a></li>
+            <li><a href="Pricing.html">Pricing</a></li>
+            <li><a href="Store.html">Store</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+
+<div class="subtitle">Recommended Hardware Configurations</div>
+
+<!-- ⚖️ REQUIRED LEGAL FTC AFFILIATE DISCLOSURE -->
+<div class="disclosure">
+    <strong>Affiliate Disclosure:</strong> As an IT consultant, I only recommend hardware I trust. Some of the links below are affiliate links. If you purchase through them, RT 9 East IT Services LLC may earn a small retail commission at no additional cost to you.
+</div>
+
+<div class="store-grid">
+
+    <!-- PRODUCT 1: DisplayLink Adapter -->
+    <div class="product-card">
+        <div>
+            <div class="category-tag">Display Adapters</div>
+            <h3>Plugable USB-C Dual 4K HDMI</h3>
+            <p>The explicit solution to macOS MST limitations. Built using the DisplayLink chipset to bypass Apple hardware blocks and drive two separate extended external screens over a single wire.</p>
+        </div>
+        <!-- 🟢 Replace href with your custom Amazon/Newegg Associate link -->
+        <a href="https://www.amazon.com" target="_blank" class="shop-btn">
+            <i class="fab fa-amazon"></i> View on Amazon
+        </a>
+    </div>
+
+    <!-- PRODUCT 2: Professional Desk Phone -->
+    <div class="product-card">
+        <div>
+            <div class="category-tag">VoIP Infrastructure</div>
+            <h3>Poly Edge E350 IP Desk Phone</h3>
+            <p>Officially certified for paid Google Voice for Google Workspace console environments. Includes integrated Wi-Fi connectivity, Bluetooth 5.0, and advanced Acoustic Fence noise cancellation.</p>
+        </div>
+        <a href="https://www.amazon.com" target="_blank" class="shop-btn">
+            <i class="fab fa-amazon"></i> View on Amazon
+        </a>
+    </div>
+
+    <!-- PRODUCT 3: Network Data Server -->
+    <div class="product-card">
+        <div>
+            <div class="category-tag">Storage Servers</div>
+            <h3>Synology DiskStation 4-Bay NAS</h3>
+            <p>The ultimate infrastructure hardware workhorse for small businesses. Builds a high-speed private cloud network with automated 3-2-1 backup compliance configurations and data redundancy profiles.</p>
+        </div>
+        <a href="https://www.amazon.com" target="_blank" class="shop-btn">
+            <i class="fab fa-amazon"></i> View on Amazon
+        </a>
+    </div>
+
+</div>
+
+<div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
+    <a href="index.html" style="font-size: 24px;">Click here to return to home</a>
+</div>
+
+</body>
+</html>
