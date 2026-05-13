@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IT Service Tiers - RT 9 East IT Services LLC</title>
+    <!-- Font Awesome link for modern checkmark icons -->
+    <link rel="stylesheet" href="cloudflare.com">
+    <style>
+        body {
+            background-image: url("MESPhereSS.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            font-family: sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            font-size: 20px;
+        }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 5px;
+            color: yellow;
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            color: #00ffff;
+            font-size: 22px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        nav ul li a {
+            font-size: 26px;
+            color: Orange;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            width: fit-content;
+        }
+        nav ul { list-style: none; padding: 0; margin-top: 10px; }
+        nav li { display: inline-block; margin: 0 15px; }
+
+        /* 📦 3-Column Tiered Pricing Grid Container */
+        .pricing-grid {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 25px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 💵 Individual Tier Cards */
+        .tier-card {
+            background: rgba(0, 0, 0, 0.75);
+            border: 2px solid #2f2f2f;
+            border-radius: 12px;
+            padding: 30px 20px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: 0.3s;
+        }
+
+        /* Highlight the middle "Most Popular" tier */
+        .tier-card.featured {
+            border: 2px solid #00ffff;
+            transform: scale(1.03);
+            background: rgba(10, 25, 40, 0.85);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+
+        .tier-card h3 {
+            color: yellow;
+            font-size: 28px;
+            margin: 0 0 10px 0;
+        }
+        .tier-card .price {
+            font-size: 42px;
+            font-weight: bold;
+            color: #00ffff;
+            margin: 15px 0;
+        }
+        .tier-card .price span {
+            font-size: 16px;
+            color: white;
+            font-weight: normal;
+        }
+
+        /* 📋 Feature Lists inside tiers */
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin: 25px 0;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .feature-list li {
+            margin-bottom: 12px;
+        }
+        .feature-list i {
+            color: #28a745;
+            margin-right: 10px;
+        }
+
+        /* 🟢 Action Button Utilities */
+        .select-btn {
+            display: block;
+            padding: 15px;
+            border-radius: 25px;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            margin-top: auto;
+        }
+        .standard-btn {
+            background-color: transparent;
+            border: 2px solid #00ffff;
+            color: #00ffff !important;
+        }
+        .featured-btn {
+            background-color: #28a745;
+            color: white !important;
+        }
+        .select-btn:hover {
+            box-shadow: 0 0 15px #00ffff;
+            transform: scale(1.05);
+            text-decoration: none;
+        }
+
+        a { color: #00ffff; font-weight: bold; text-decoration: none; }
+        a:hover { color: white; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>RT 9 East IT Services LLC</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Welcome.html">Welcome</a></li>
+            <li><a href="CompanyBackground.html">Company Background</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="Certificates.html">Certificates</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+
+<div class="subtitle">Managed IT & Support Subscription Tiers</div>
+
+<div class="pricing-grid">
+
+    <!-- TIER 1: Essential -->
+    <div class="tier-card">
+        <div>
+            <h3>Essential Support</h3>
+            <div style="color: Orange; font-size: 16px;">Best for Remote Workers</div>
+            <div class="price">$49<span> / month</span></div>
+            <ul class="feature-list">
+                <li><i class="fas fa-check"></i> Remote Desktop Helpdesk</li>
+                <li><i class="fas fa-check"></i> Next-Business-Day Response</li>
+                <li><i class="fas fa-check"></i> Managed Antivirus Shield</li>
+                <li><i class="fas fa-check"></i> Critical OS Patching</li>
+                <li><i class="fas fa-check"></i> 1 Device Supported</li>
+            </ul>
+        </div>
+        <a href="Contact.html" class="select-btn standard-btn">Get Started</a>
+    </div>
+
+    <!-- TIER 2: Professional (Featured) -->
+    <div class="tier-card featured">
+        <div>
+            <div style="background: #00ffff; color: black; display: inline-block; padding: 2px 12px; border-radius: 10px; font-size: 14px; font-weight: bold; margin-bottom: 5px;">MOST POPULAR</div>
+            <h3>Proactive IT</h3>
+            <div style="color: Orange; font-size: 16px;">Best for Small Offices</div>
+            <div class="price">$129<span> / month</span></div>
+            <ul class="feature-list">
+                <li><i class="fas fa-check"></i> 4-Hour Remote Response</li>
+                <li><i class="fas fa-check"></i> Proactive Threat Monitoring</li>
+                <li><i class="fas fa-check"></i> Cloud Backup Array (500GB)</li>
+                <li><i class="fas fa-check"></i> Network & Router Security</li>
+                <li><i class="fas fa-check"></i> Up to 3 Devices Supported</li>
+            </ul>
+        </div>
+        <a href="Contact.html" class="select-btn featured-btn">Select Plan</a>
+    </div>
+
+    <!-- TIER 3: Premium -->
+    <div class="tier-card">
+        <div>
+            <h3>Complete Care</h3>
+            <div style="color: Orange; font-size: 16px;">Best for Growing Businesses</div>
+            <div class="price">$249<span> / month</span></div>
+            <ul class="feature-list">
+                <li><i class="fas fa-check"></i> 1-Hour Urgent Response</li>
+                <li><i class="fas fa-check"></i> Priority On-Site Dispatch</li>
+                <li><i class="fas fa-check"></i> Full Cloud Backup (2TB)</li>
+                <li><i class="fas fa-check"></i> 24/7 Security Operations</li>
+                <li><i class="fas fa-check"></i> Server & NAS Management</li>
+            </ul>
+        </div>
+        <a href="Contact.html" class="select-btn standard-btn">Contact Us</a>
+    </div>
+
+</div>
+
+<div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
+    <a href="index.html" style="font-size: 24px;">Click here to return to home</a>
+</div>
+
+</body>
+</html>
