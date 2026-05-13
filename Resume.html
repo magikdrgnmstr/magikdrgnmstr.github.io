@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Resume - Michael Ludwig</title>
-    <!-- Fixed Font Awesome link to make icons visible -->
+    <title>Certificates - Michael Ludwig</title>
     <link rel="stylesheet" href="cloudflare.com">
     <style>
         body {
-            /* 🖼️ Background image updated as requested */
             background-image: url("MESPhereSS.jpg");
             background-size: cover;
             background-attachment: fixed;
@@ -15,31 +13,28 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
             font-size: 20px;
         }
-        /* 🎓 Header in Yellow */
         h1 {
-            font-size: 54px;
-            margin-bottom: 10px;
+            font-size: 50px;
+            margin-bottom: 15px;
             color: yellow;
             text-align: center;
         }
-        /* 🍊 Navigation links in Orange */
         nav ul li a {
-            font-size: 28px;
+            font-size: 26px;
             color: Orange;
         }
         header {
             background: rgba(0, 0, 0, 0.5);
-            padding: 25px;
-            border-radius: 8px;
+            padding: 20px;
+            border-radius: 10px;
             display: block;
             text-align: center;
             margin: 20px auto;
             width: fit-content;
         }
-        nav ul { list-style: none; padding: 0; }
-        nav li { display: inline-block; margin: 0 20px; }
-        
-        /* 📦 Main layout container */
+        nav ul { list-style: none; padding: 0; margin-top: 10px; }
+        nav li { display: inline-block; margin: 0 15px; }
+
         .main-content {
             display: flex;
             justify-content: flex-start;
@@ -48,8 +43,7 @@
             padding: 20px;
         }
 
-        /* 🖼️ PDF Frame aligned left with reduced size */
-        .pdf-frame {
+        .pdf-viewer {
             border: 8px solid #2f2f2f;
             border-radius: 5px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.5);
@@ -57,59 +51,82 @@
             background: rgba(0,0,0,0.3);
         }
 
-        /* 📝 Sidebar updated with matching styling for business monetization */
+        /* 📝 Matching Active Sidebar */
         .sidebar {
             width: 35%;
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.8);
             padding: 25px;
-            border-radius: 8px;
-            border: 1px solid #00ffff;
+            border-radius: 12px;
+            border: 2px solid orange;
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            box-sizing: border-box;
         }
-
-        /* 🟢 Custom button styles for monetization and downloads */
-        .sidebar-btn {
+        .sidebar h3 {
+            color: yellow;
+            margin-top: 0;
+            font-size: 24px;
+            text-align: center;
+        }
+        .sidebar p {
+            font-size: 16px;
+            line-height: 1.4;
+            color: #e0e0e0;
+        }
+        .sidebar label {
+            display: block;
+            color: orange;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+        .sidebar input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border-radius: 4px;
+            border: 1px solid #444;
+            background: rgba(255, 255, 255, 0.9);
+            color: #000;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+        .download-btn {
             display: inline-block;
-            width: 85%;
-            padding: 14px 20px;
+            width: 100%;
+            padding: 12px;
             border-radius: 25px;
             font-size: 18px;
             text-decoration: none;
-            margin: 10px 0;
+            margin-top: 18px;
             transition: 0.3s;
             box-shadow: 0 4px 10px rgba(0,0,0,0.5);
             font-weight: bold;
             text-align: center;
-        }
-        .consult-btn {
             background-color: #28a745;
             color: white !important;
+            border: none;
+            cursor: pointer;
         }
-        .download-btn {
-            background-color: #0077B5;
-            color: white !important;
-        }
-        .sidebar-btn:hover {
+        .download-btn:hover {
             box-shadow: 0 0 15px #00ffff;
-            transform: scale(1.03);
-            text-decoration: none;
+            transform: scale(1.02);
         }
 
-        a { color: #00ffff; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
+        a { color: #00ffff; font-weight: bold; text-decoration: none; }
+        a:hover { color: white; text-decoration: underline; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Michael Ludwig's Resume</h1>
+    <h1>Michael A Ludwig's Certifications</h1>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="Welcome.html">Welcome</a></li>
             <li><a href="CompanyBackground.html">Company Background</a></li>
-            <li><a href="Certificates.html">Certificates</a></li>
-            <li><a href="Pricing.html">Pricing</a></li> 
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="Pricing.html">Pricing</a></li>
             <li><a href="Contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -118,33 +135,47 @@
 <hr>
 
 <div class="main-content">
-    <!-- LEFT SIDE: Resume PDF -->
-    <div class="pdf-frame">
-        <embed src="Mike LI Profile.pdf" type="application/pdf" width="100%" height="700px" />
+    <!-- LEFT SIDE: Certificates PDF -->
+    <div class="pdf-viewer">
+        <embed src="Mike Certs.pdf" type="application/pdf" width="100%" height="700px" />
     </div>
 
-    <!-- RIGHT SIDE: Commercial Monetization Sidebar -->
+    <!-- RIGHT SIDE: Lead Magnet Form -->
     <div class="sidebar">
-        <h3 style="color: yellow; margin-top: 0; font-size: 24px;">Need Reliable IT Support?</h3>
-        <p style="font-size: 18px; line-height: 1.4; margin-bottom: 20px;">
-            From custom network infrastructure to remote system troubleshooting, 
-            <b style="color: Orange;">RT 9 East IT Services LLC</b> provides expert solutions for home offices and small businesses.
+        <h3>Free Tech Resource</h3>
+        <p style="color: orange; font-weight: bold; text-align: center; margin-bottom: 5px;">
+            <i class="fas fa-shield-alt"></i> Small Business Network Security Checklist
+        </p>
+        <p>
+            Secure your infrastructure. Protect your home office or business from ransomware threats with this diagnostic 10-point checklist.
         </p>
         
-        <!-- Booking Call To Action -->
-        <a href="Contact.html" class="sidebar-btn consult-btn">
-            <i class="fas fa-calendar-alt"></i> Book an IT Consultation
-        </a>
+        <!-- 🟢 Replace the action URL below with your new Formspree ID link -->
+        <form action="formspree.io" method="POST">
+            <!-- This hidden input tells Formspree where to send the user AFTER they hit submit -->
+            <input type="hidden" name="_next" value="rt9east-itservices.com">
+            
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
 
-        <!-- Document Download Action -->
-        <a href="Mike LI Profile.pdf" download class="sidebar-btn download-btn">
-            <i class="fas fa-file-download"></i> Download PDF Resume
-        </a>
+            <label for="company">Business Name</label>
+            <input type="text" id="company" name="company" placeholder="Company LLC">
+
+            <label for="email">Business Email</label>
+            <input type="email" id="email" name="email" required placeholder="johndoe@business.com">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder运行="(508) 555-0199">
+
+            <button type="submit" class="download-btn">
+                <i class="fas fa-file-download"></i> Get Free Checklist
+            </button>
+        </form>
     </div>
 </div>
 
 <div style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
-    <a href="index.html" style="font-size: 24px; color: #00ffff;">Click here to return to home</a>
+    <a href="index.html" style="font-size: 24px;">Click here to return to home</a>
 </div>
 
 </body>
