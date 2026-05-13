@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>Resume - Michael Ludwig</title>
-    <!-- Font Awesome link for icons -->
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Fixed Font Awesome link to make icons visible -->
+    <link rel="stylesheet" href="cloudflare.com">
     <style>
         body {
             /* 🖼️ Background image updated as requested */
@@ -57,9 +57,42 @@
             background: rgba(0,0,0,0.3);
         }
 
-        /* 📝 Sidebar is now empty and blank */
+        /* 📝 Sidebar updated with matching styling for business monetization */
         .sidebar {
             width: 35%;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #00ffff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        /* 🟢 Custom button styles for monetization and downloads */
+        .sidebar-btn {
+            display: inline-block;
+            width: 85%;
+            padding: 14px 20px;
+            border-radius: 25px;
+            font-size: 18px;
+            text-decoration: none;
+            margin: 10px 0;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            font-weight: bold;
+            text-align: center;
+        }
+        .consult-btn {
+            background-color: #28a745;
+            color: white !important;
+        }
+        .download-btn {
+            background-color: #0077B5;
+            color: white !important;
+        }
+        .sidebar-btn:hover {
+            box-shadow: 0 0 15px #00ffff;
+            transform: scale(1.03);
+            text-decoration: none;
         }
 
         a { color: #00ffff; text-decoration: none; font-weight: bold; }
@@ -89,8 +122,24 @@
         <embed src="Mike LI Profile.pdf" type="application/pdf" width="100%" height="700px" />
     </div>
 
-    <!-- RIGHT SIDE: Blank space -->
-    <div class="sidebar"></div>
+    <!-- RIGHT SIDE: Commercial Monetization Sidebar -->
+    <div class="sidebar">
+        <h3 style="color: yellow; margin-top: 0; font-size: 24px;">Need Reliable IT Support?</h3>
+        <p style="font-size: 18px; line-height: 1.4; margin-bottom: 20px;">
+            From custom network infrastructure to remote system troubleshooting, 
+            <b style="color: Orange;">RT 9 East IT Services LLC</b> provides expert solutions for home offices and small businesses.
+        </p>
+        
+        <!-- Booking Call To Action -->
+        <a href="Contact.html" class="sidebar-btn consult-btn">
+            <i class="fas fa-calendar-alt"></i> Book an IT Consultation
+        </a>
+
+        <!-- Document Download Action -->
+        <a href="Mike LI Profile.pdf" download class="sidebar-btn download-btn">
+            <i class="fas fa-file-download"></i> Download PDF Resume
+        </a>
+    </div>
 </div>
 
 <div style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
