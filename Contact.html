@@ -26,11 +26,35 @@
             margin-bottom: 20px;
             color: orange;
         }
-        nav ul li a {
-            font-size: 1.5em;
-            margin: 0 10px;
-            color: yellow;
+        
+        /* 📦 Modern, Single-Line Flexbox Navigation Wrapper */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px; /* Creates consistent spacing between items */
+            margin-bottom: 25px;
+            width: 100%;
         }
+        nav a {
+            font-size: 1.5em;
+            color: yellow;
+            font-weight: bold;
+            text-decoration: none;
+            white-space: nowrap; /* Prevents individual links from wrapping */
+        }
+        nav a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px #ff8c00;
+            text-decoration: underline;
+        }
+        /* Separator Pip Styling */
+        nav .pip {
+            color: white;
+            font-size: 1.3em;
+            user-select: none;
+        }
+
         p {
             color: yellow;
         }
@@ -43,14 +67,7 @@
             color: #ffffff;
             text-shadow: 0 0 10px #ff8c00;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            display: inline-block;
-            margin: 0 15px;
-        }
+
         /* 📦 Flexbox Container for side-by-side layout */
         main {
             background: rgba(0, 0, 0, 0.75);
@@ -158,17 +175,25 @@
 
 <header>
     <h1>Contact Me</h1>
+    <!-- 🟢 FIXED SINGLE-LINE FLEXBOX NAVIGATION WITH COMPATIBLE STYLING -->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Welcome.html">Welcome</a></li>
-            <li><a href="CompanyBackground.html">Company Background</a></li>
-            <li><a href="Resume.html">Resume</a></li>
-            <li><a href="Certificates.html">Certificates</a></li>
-            <li><a href="Pricing.html">Pricing</a></li>
-            <li><a href="Store.html">Store</a></li>
-            <li><a href="Client-Portal.html">Client Portal</a></li>
-        </ul>
+        <a href="index.html">Home</a> 
+        <span class="pip">|</span> 
+        <a href="Welcome.html">Welcome</a> 
+        <span class="pip">|</span> 
+        <a href="CompanyBackground.html">Company Background</a> 
+        <span class="pip">|</span> 
+        <a href="Resume.html">Resume</a> 
+        <span class="pip">|</span> 
+        <a href="Certificates.html">Certificates</a> 
+        <span class="pip">|</span> 
+        <a href="Pricing.html">Pricing</a> 
+        <span class="pip">|</span> 
+        <a href="Store.html">Store</a> 
+        <span class="pip">|</span> 
+        <a href="Client-Portal.html">Client Portal</a> 
+        <span class="pip">|</span> 
+        <a href="Contact.html">Contact</a> 
     </nav>
 </header>
 
