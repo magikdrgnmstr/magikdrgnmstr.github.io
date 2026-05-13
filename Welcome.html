@@ -13,16 +13,44 @@
             padding: 20px;
             font-size: 20px;
         }
+        
+        /* 📦 Modern, Single-Line Flexbox Navigation Wrapper */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px; /* Creates consistent spacing between items */
+            margin-bottom: 25px;
+            width: 100%;
+        }
+
+        nav a {
+            font-size: 24px; /* Slightly adjusted to guarantee single-line fit */
+            color: #D55102;
+            font-weight: bold;
+            text-decoration: none;
+            white-space: nowrap; /* Prevents individual links from wrapping */
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Separator Pip Styling */
+        nav .pip {
+            color: white;
+            font-size: 22px;
+            user-select: none;
+        }
 
         /* Container for the 1994 photo and its caption */
         .top-right-container {
             position: absolute;
-            top: 100px; 
+            top: 100px;
             right: 40px;
             text-align: center;
             width: 400px;
         }
-
         .top-right-img {
             border: 5px solid #D55102; /* Orange border to match your theme */
             border-radius: 8px;
@@ -30,7 +58,6 @@
             width: 100%;
             height: auto;
         }
-
         .img-caption {
             background: rgba(0, 0, 0, 0.6); /* Translucent background */
             color: white;
@@ -40,68 +67,56 @@
             border-radius: 4px;
             border: 1px solid #D55102;
         }
-
-        nav a {
-            font-size: 26px;
-            margin: 0 10px;
-        }
-
+        
         p {
             font-size: 22px;
             line-height: 1.6;
             color: #D55102;
             max-width: 55%; /* Keeping text clear of the right-side image */
         }
-
         .name-header {
             font-size: 40px;
             color: #D55102;
             margin-top: 20px;
         }
-
-        a {
-            color: #D55102;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
 
-    <nav style="text-align: center; margin-bottom: 20px;">
-        <a href="Home.html">Home</a> | 
-        <a href="CompanyBackground.html">Company Background</a> | 
-        <a href="Certificates.html">Certificates</a> | 
-        <li><a href="Pricing.html">Pricing</a></li> |
-        <a href="Contact.html">Contact</a>
-    </nav>
+<!-- 🟢 FIXED SINGLE LINE NAVIGATION -->
+<nav>
+    <a href="index.html">Home</a> 
+    <span class="pip">|</span>
+    <a href="CompanyBackground.html">Company Background</a> 
+    <span class="pip">|</span>
+    <a href="Certificates.html">Certificates</a> 
+    <span class="pip">|</span>
+    <a href="Pricing.html">Pricing</a> <!-- Removed rogue <li> tags causing line breaks -->
+    <span class="pip">|</span>
+    <a href="Contact.html">Contact</a>
+</nav>
 
-    <!-- NEW: Top right image container with caption -->
-    <div class="top-right-container">
-        <img src="R1-01003-0008.jpg" alt="Mike 1994" class="top-right-img">
-        <div class="img-caption">Michael Ludwig - 1994</div>
-    </div>
+<!-- NEW: Top right image container with caption -->
+<div class="top-right-container">
+    <img src="R1-01003-0008.jpg" alt="Mike 1994" class="top-right-img">
+    <div class="img-caption">Michael Ludwig - 1994</div>
+</div>
 
-    <hr>
+<hr>
 
-    <p class="name-header"><b>Hi, I'm Michael Ludwig</b></p>
-    <p>The very proud owner of RT 9 East IT Services LLC.</p>
-    <p>I welcome you to the webpage I designed.</p>
-    <p>It was designed by me to show that besides being an experienced</p>
-    <p>IT Professional that I am also a creative person and it reflects</p>
-    <p>in my quality of work and my ability to code in html.</p>
+<p class="name-header"><b>Hi, I'm Michael Ludwig</b></p>
+<p>The very proud owner of RT 9 East IT Services LLC.</p>
+<p>I welcome you to the webpage I designed.</p>
+<p>It was designed by me to show that besides being an experienced</p>
+<p>IT Professional that I am also a creative person and it reflects</p>
+<p>in my quality of work and my ability to code in html.</p>
+<p>Kindly click on the image below to view my Resume:</p>
 
-    <p>Kindly click on the image below to view my Resume:</p>
-
-    <div style="margin-top: 40px;">
-        <a href="Resume.html">
-            <img src="MikeEmoji.jpg" alt="Mike's Photo" width="350" height="500">
-        </a>
-    </div>
+<div style="margin-top: 40px;">
+    <a href="Resume.html">
+        <img src="MikeEmoji.jpg" alt="Mike's Photo" width="350" height="500">
+    </a>
+</div>
 
 </body>
 </html>
