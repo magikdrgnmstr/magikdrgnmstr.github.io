@@ -8,7 +8,6 @@
             background-size: cover;
             background-attachment: fixed;
             color: #ffffff;
-            text-align: center;
             font-family: sans-serif;
             text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
             font-size: 22px;
@@ -18,76 +17,131 @@
             flex-direction: column;
             min-height: 100vh;
         }
-
         header {
             padding-top: 20px;
+            text-align: center;
         }
-
         h1 {
             font-size: 4em !important;
             margin-bottom: 20px;
             color: orange;
         }
-
         nav ul li a {
             font-size: 1.5em;
             margin: 0 10px;
             color: yellow;
         }
-
         p {
             color: yellow;
         }
-
         a {
             color: #cc0000;
             text-decoration: none;
             font-weight: bold;
         }
-
         a:hover {
             color: #ffffff;
             text-shadow: 0 0 10px #ff8c00;
         }
-
         ul {
             list-style-type: none;
             padding: 0;
         }
-
         li {
             display: inline-block;
             margin: 0 15px;
         }
-
+        
+        /* 📦 Flexbox Container for side-by-side layout */
         main {
             background: rgba(0, 0, 0, 0.75);
             border: 3px solid orange;
             padding: 40px;
             border-radius: 15px;
-            display: inline-block;
-            margin: 50px auto; /* Centered with top/bottom margin */
+            margin: 30px auto; 
             box-shadow: 0 0 20px rgba(0,0,0,0.7);
-            flex: 1; /* Helps push the footer down */
+            flex: 1; 
+            max-width: 1100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            text-align: left; /* Left align text inside container for forms */
+        }
+
+        /* 📋 Columns */
+        .contact-info {
+            width: 45%;
+        }
+        .form-container {
+            width: 50%;
+            background: rgba(20, 20, 20, 0.6);
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid orange;
         }
 
         .email-text {
-            font-size: 1.8em;
+            font-size: 1.4em;
             color: #cc0000;
             display: block;
             margin-top: 10px;
             cursor: pointer;
+            word-wrap: break-word;
         }
-
         .profile-link {
             font-size: 1.4em;
-            color: #0077B5; 
+            color: #0077B5;
             display: block;
-            margin-top: 20px;
+            margin-top: 15px;
         }
-
         .field-nation {
             color: orange !important;
+        }
+
+        /* 📝 Responsive HTML Form Styling */
+        .it-form label {
+            display: block;
+            color: orange;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 15px;
+            text-shadow: none;
+        }
+        .it-form input, .it-form select, .it-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #444;
+            background: rgba(255, 255, 255, 0.9);
+            color: #000000;
+            font-size: 16px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .it-form textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .submit-btn {
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            margin-top: 20px;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+        .submit-btn:hover {
+            background-color: #218838;
+            box-shadow: 0 0 15px #28a745;
+            transform: scale(1.02);
         }
 
         /* 🏁 Professional Footer Styling */
@@ -97,45 +151,84 @@
             font-size: 16px;
             border-top: 1px solid #444;
             color: white;
-            text-shadow: none; /* Keeps it clean and readable */
+            text-shadow: none; 
+            text-align: center;
+        }
+        footer p {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Contact Me</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Welcome.html">Welcome</a></li>
-                <li><a href="CompanyBackground.html">Company Background</a></li>
-                <li><a href="Resume.html">Resume</a></li>
-                <li><a href="Certificates.html">Certificates</a></li>
-                <li><a href="Pricing.html">Pricing</a></li> 
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <p>Feel free to reach out via email:</p>
+<header>
+    <h1>Contact Me</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Welcome.html">Welcome</a></li>
+            <li><a href="CompanyBackground.html">Company Background</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="Certificates.html">Certificates</a></li>
+            <li><a href="Pricing.html">Pricing</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- LEFT COLUMN: Direct Communication Links -->
+    <div class="contact-info">
+        <p style="font-size: 1.3em; margin-top: 0;">Feel free to reach out via email:</p>
         <p>
             <a href="mailto:michaell@rt9east-itservices.com" class="email-text">
                 michaell@rt9east-itservices.com
             </a>
         </p>
-
-        <p style="margin-top: 30px;">View my professional profiles:</p>
-        
+        <p style="margin-top: 40px; font-size: 1.3em;">View my professional profiles:</p>
         <a href="https://fieldnation.com" target="_blank" class="profile-link field-nation">Field Nation Profile</a>
-        
         <a href="https://linkedin.com" target="_blank" class="profile-link">LinkedIn Profile</a>
-    </main>
+    </div>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 RT 9 East IT Services LLC. All Rights Reserved.</p>
-            <p>Providing Precision IT Solutions with Veteran Integrity.</p>
-        </div>
-    </footer>
+    <!-- RIGHT COLUMN: Commercial Lead Capture Form -->
+    <div class="form-container">
+        <h2 style="color: yellow; margin-top: 0; font-size: 26px; text-align: center; text-shadow: none;">IT Service Request</h2>
+        
+        <!-- Action URL points to Formspree for handling flat-file static form collection safely -->
+        <form action="formspree.io" method="POST" class="it-form">
+            <label for="name">Your Name / Contact *</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
+
+            <label for="company">Business Name (If Applicable)</label>
+            <input type="text" id="company" name="company" placeholder="Company LLC">
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="johndoe@email.com">
+
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="(508) 555-0199">
+
+            <label for="devices">Approximate Device Count</label>
+            <select id="devices" name="devices">
+                <option value="1">1 Device (Home Office / Remote User)</option>
+                <option value="2-5">2 - 5 Devices (Micro Business)</option>
+                <option value="6-15">6 - 15 Devices (Small Office)</option>
+                <option value="16+">16+ Devices (Commercial Enterprise)</option>
+            </select>
+
+            <label for="issue">Describe Your Technical Issue or Project *</label>
+            <textarea id="issue" name="message" required placeholder="Describe what infrastructure, network, software, or server support you need..."></textarea>
+
+            <button type="submit" class="submit-btn">Submit Request</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2026 RT 9 East IT Services LLC. All Rights Reserved.</p>
+        <p>Providing Precision IT Solutions with Veteran Integrity.</p>
+    </div>
+</footer>
+
 </body>
 </html>
