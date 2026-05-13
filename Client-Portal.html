@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Client Onboarding Portal - RT 9 East IT Services LLC</title>
+    <!-- Font Awesome link for professional icons -->
+    <link rel="stylesheet" href="cloudflare.com">
+    <style>
+        body {
+            background-image: url("MESPhereSS.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            font-family: sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 5px;
+            color: yellow;
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            color: #00ffff;
+            font-size: 22px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        nav ul li a {
+            font-size: 26px;
+            color: Orange;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            width: fit-content;
+        }
+        nav ul { list-style: none; padding: 0; margin-top: 10px; }
+        nav li { display: inline-block; margin: 0 15px; }
+
+        /* 📦 Main Two-Column Layout Container */
+        .portal-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 35px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 🛠️ LEFT COLUMN: Step-by-Step Instructions & Software Kit */
+        .instructions-column {
+            width: 55%;
+            background: rgba(0, 0, 0, 0.75);
+            border: 1px solid #2f2f2f;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+            box-sizing: border-box;
+        }
+        .onboarding-step {
+            background: rgba(255,255,255,0.05);
+            border-left: 4px solid orange;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        .onboarding-step h3 {
+            margin: 0 0 10px 0;
+            color: yellow;
+            font-size: 22px;
+        }
+        .onboarding-step p {
+            font-size: 16px;
+            line-height: 1.4;
+            margin: 0 0 10px 0;
+            color: #e0e0e0;
+        }
+
+        /* 📝 RIGHT COLUMN: Secured System Information Form */
+        .form-column {
+            width: 40%;
+            background: rgba(10, 25, 40, 0.85);
+            border: 2px solid #00ffff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+            box-sizing: border-box;
+        }
+        .form-column h3 {
+            color: yellow;
+            margin-top: 0;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        /* 📝 Form Styling */
+        .portal-form label {
+            display: block;
+            color: orange;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .portal-form input, .portal-form select, .portal-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #444;
+            background: rgba(255, 255, 255, 0.95);
+            color: #000000;
+            font-size: 15px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .portal-form textarea {
+            height: 80px;
+            resize: vertical;
+        }
+
+        /* 🟢 Button Styling */
+        .action-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            margin-top: 5px;
+            text-align: center;
+        }
+        .download-btn {
+            background-color: #0077B5;
+            color: white !important;
+        }
+        .submit-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            font-size: 18px;
+            width: 100%;
+            padding: 12px;
+            margin-top: 25px;
+            cursor: pointer;
+        }
+        .action-btn:hover, .submit-btn:hover {
+            box-shadow: 0 0 15px #00ffff;
+            transform: scale(1.02);
+            text-decoration: none;
+        }
+
+        a { color: #00ffff; font-weight: bold; text-decoration: none; }
+        a:hover { color: white; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>RT 9 East IT Services LLC</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Welcome.html">Welcome</a></li>
+            <li><a href="CompanyBackground.html">Company Background</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="Certificates.html">Certificates</a></li>
+            <li><a href="Pricing.html">Pricing</a></li>
+            <li><a href="Store.html">Store</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+
+<div class="subtitle"><i class="fas fa-key"></i> New Client Onboarding Command Center</div>
+
+<div class="portal-container">
+
+    <!-- LEFT COLUMN: Deployment Steps & Instructions -->
+    <div class="instructions-column">
+        <h2 style="color: Orange; margin-top: 0; font-size: 26px;"><i class="fas fa-list-check"></i> Setup Instructions</h2>
+        <p style="font-size: 16px; color: #ccc; margin-bottom: 25px;">Welcome to the team. Please complete these structural deployment steps to fully activate your managed IT support service tier coverage.</p>
+
+        <!-- STEP 1 -->
+        <div class="onboarding-step">
+            <h3>1. Submit Infrastructure Form</h3>
+            <p>Complete the secure profile form on the right-hand panel of this screen. Gathering your baseline operating systems, router models, and ISP data prevents critical delays during an emergency dispatch event.</p>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="onboarding-step">
+            <h3>2. Deploy Remote Monitoring Software</h3>
+            <p>Download our secure, lightweight remote monitoring and management (RMM) utility. This agent links your local hardware devices directly to our virtual desktop helpdesk system.</p>
+            <a href="#" class="action-btn download-btn"><i class="fas fa-download"></i> Download Remote Agent</a>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="onboarding-step">
+            <h3>3. Secure Password Submission</h3>
+            <p><b>Security Warning:</b> Never transmit local infrastructure administrative passcodes over plaintext email or SMS text message formats. Once your initial form registers, we will initialize an encrypted vault session link to swap environment credentials safely.</p>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="onboarding-step">
+            <h3>4. Review Emergency Support Protocols</h3>
+            <p>Your subscription tier is now tracked under our strict Service Level Agreements (SLA). For non-urgent adjustments, submit a ticket via our main Contact module. For critical system downtime or server drops, use your priority phone dispatch line provided in your welcome email.</p>
+        </div>
+    </div>
+
+    <!-- RIGHT COLUMN: Technical Onboarding Capture Form -->
+    <div class="form-column">
+        <h3>System Environment Profile</h3>
+        <p style="font-size: 14px; text-align: center; color: #ccc; margin-top: -5px;">Secure Data Collection Pipeline</p>
+        
+        <!-- 🟢 REPLACE ACTION LINK BELOW WITH YOUR NEW UNIQUE FORMSPREE ID LINK -->
+        <form action="formspree.io" method="POST" class="portal-form">
+            
+            <label for="client-name">Primary Contact Name *</label>
+            <input type="text" id="client-name" name="onboarding_contact_name" required placeholder="John Doe">
+
+            <label for="biz-name">Registered Business Name *</label>
+            <input type="text" id="biz-name" name="onboarding_business_name" required placeholder="Company LLC">
+
+            <label for="os-mix">Primary Workstation OS *</label>
+            <select id="os-mix" name="operating_system_environment">
+                <option value="windows">Strictly Windows Environment</option>
+                <option value="mac">Strictly macOS Environment</option>
+                <option value="hybrid">Hybrid (Both Windows & Mac Devices)</option>
+            </select>
+
+            <label for="network-hardware">Router / Firewall Models</label>
+            <input type="text" id="network-hardware" name="network_router_firewall_models" placeholder="e.g., Netgear Nighthawk, Cisco Meraki, etc.">
+
+            <label for="isp-provider">Internet Service Provider (ISP)</label>
+            <input type="text" id="isp-provider" name="internet_service_provider" placeholder="e.g., Comcast Business, Spectrum">
+
+            <label for="backup-status">Current Data Backup Setup</label>
+            <select id="backup-status" name="current_backup_infrastructure">
+                <option value="none">No Backup System Currently in Place</option>
+                <option value="local">Local External Hard Drives / Local NAS Only</option>
+                <option value="cloud">Cloud-Based Backup Platform Only</option>
+                <option value="hybrid-321">Complete 3-2-1 Compliance Protection</option>
+            </select>
+
+            <label for="infrastructure-notes">Additional Infrastructure Concerns / Notes</label>
+            <textarea id="infrastructure-notes" name="critical_infrastructure_notes" placeholder="List any old hardware, recurring network bugs, or specialized line-of-business apps we should track immediately..."></textarea>
+
+            <button type="submit" class="submit-btn">Complete Profile Activation</button>
+        </form>
+    </div>
+
+</div>
+
+<div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
+    <a href="index.html" style="font-size: 24px;">Click here to return to home</a>
+</div>
+
+</body>
+</html>
