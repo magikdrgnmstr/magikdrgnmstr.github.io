@@ -26,7 +26,6 @@
             margin-bottom: 20px;
             color: orange;
         }
-        
         /* 📦 Modern, Single-Line Flexbox Navigation Wrapper */
         nav {
             display: flex;
@@ -54,7 +53,6 @@
             font-size: 1.3em;
             user-select: none;
         }
-
         p {
             color: yellow;
         }
@@ -67,14 +65,13 @@
             color: #ffffff;
             text-shadow: 0 0 10px #ff8c00;
         }
-
-        /* 📦 Flexbox Container for side-by-side layout */
+        /* 📦 Flexbox Container - CHANGED FROM MARGIN AUTO TO MARGIN LEFT FOR LEFT ALIGNMENT */
         main {
             background: rgba(0, 0, 0, 0.75);
             border: 3px solid orange;
             padding: 40px;
             border-radius: 15px;
-            margin: 30px auto;
+            margin: 30px 0 30px 40px; /* Aligns block layout to the left with a clean 40px offset */
             box-shadow: 0 0 20px rgba(0,0,0,0.7);
             flex: 1;
             max-width: 1100px;
@@ -172,83 +169,71 @@
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Contact Me</h1>
-    <!-- 🟢 FIXED SINGLE-LINE FLEXBOX NAVIGATION WITH COMPATIBLE STYLING -->
-    <nav>
-        <a href="index.html">Home</a> 
-        <span class="pip">|</span> 
-        <a href="Welcome.html">Welcome</a> 
-        <span class="pip">|</span> 
-        <a href="CompanyBackground.html">Company Background</a> 
-        <span class="pip">|</span> 
-        <a href="Resume.html">Resume</a> 
-        <span class="pip">|</span> 
-        <a href="Certificates.html">Certificates</a> 
-        <span class="pip">|</span> 
-        <a href="Pricing.html">Pricing</a> 
-        <span class="pip">|</span> 
-        <a href="Client-Portal.html">Client Portal</a> 
-        <span class="pip">|</span> 
-        <a href="Store.html">Store</a>
-    </nav>
-</header>
-
-<main>
-    <!-- LEFT COLUMN: Direct Communication Links -->
-    <div class="contact-info">
-        <p style="font-size: 1.3em; margin-top: 0;">Feel free to reach out via email:</p>
-        <p>
-            <a href="mailto:michaell@rt9east-itservices.com" class="email-text">
-                michaell@rt9east-itservices.com
-            </a>
-        </p>
-        <p style="margin-top: 40px; font-size: 1.3em;">View my professional profiles:</p>
-        <a href="https://fieldnation.com" target="_blank" class="profile-link field-nation">Field Nation Profile</a>
-        <a href="https://linkedin.com" target="_blank" class="profile-link">LinkedIn Profile</a>
-    </div>
-
-    <!-- RIGHT COLUMN: Commercial Lead Capture Form -->
-    <div class="form-container">
-        <h2 style="color: yellow; margin-top: 0; font-size: 26px; text-align: center; text-shadow: none;">IT Service Request</h2>
-        
-        <!-- 🟢 INTEGRATED LIVE FORMSPREE LINK BELOW -->
-        <form action="https://formspree.io/f/xjglzyzy" method="POST" class="it-form">
-            <label for="name">Your Name / Contact *</label>
-            <input type="text" id="name" name="name" required placeholder="John Doe">
-
-            <label for="company">Business Name (If Applicable)</label>
-            <input type="text" id="company" name="company" placeholder="Company LLC">
-
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" required placeholder="johndoe@email.com">
-
-            <label for="phone">Phone Number *</label>
-            <input type="tel" id="phone" name="phone" required placeholder="(508) 555-0199">
-
-            <label for="devices">Approximate Device Count</label>
-            <select id="devices" name="devices">
-                <option value="1">1 Device (Home Office / Remote User)</option>
-                <option value="2-5">2 - 5 Devices (Micro Business)</option>
-                <option value="6-15">6 - 15 Devices (Small Office)</option>
-                <option value="16+">16+ Devices (Commercial Enterprise)</option>
-            </select>
-
-            <label for="issue">Describe Your Technical Issue or Project *</label>
-            <textarea id="issue" name="message" required placeholder="Describe what infrastructure, network, software, or server support you need..."></textarea>
-
-            <button type="submit" class="submit-btn">Submit Request</button>
-        </form>
-    </div>
-</main>
-
-<footer>
-    <div class="footer-content">
-        <p>&copy; 2026 RT 9 East IT Services LLC. All Rights Reserved.</p>
-        <p>Providing Precision IT Solutions with Veteran Integrity.</p>
-    </div>
-</footer>
-
+    <header>
+        <h1>Contact Me</h1>
+        <!-- 🟢 FIXED SINGLE-LINE FLEXBOX NAVIGATION WITH COMPATIBLE STYLING -->
+        <nav>
+            <a href="index.html">Home</a>
+            <span class="pip">|</span>
+            <a href="Welcome.html">Welcome</a>
+            <span class="pip">|</span>
+            <a href="CompanyBackground.html">Company Background</a>
+            <span class="pip">|</span>
+            <a href="Resume.html">Resume</a>
+            <span class="pip">|</span>
+            <a href="Certificates.html">Certificates</a>
+            <span class="pip">|</span>
+            <a href="Pricing.html">Pricing</a>
+            <span class="pip">|</span>
+            <a href="Client-Portal.html">Client Portal</a>
+            <span class="pip">|</span>
+            <a href="Store.html">Store</a>
+        </nav>
+    </header>
+    <main>
+        <!-- LEFT COLUMN: Direct Communication Links -->
+        <div class="contact-info">
+            <p style="font-size: 1.3em; margin-top: 0;">Feel free to reach out via email:</p>
+            <p>
+                <a href="mailto:michaell@rt9east-itservices.com" class="email-text">
+                    michaell@rt9east-itservices.com
+                </a>
+            </p>
+            <p style="margin-top: 40px; font-size: 1.3em;">View my professional profiles:</p>
+            <a href="https://fieldnation.com" target="_blank" class="profile-link field-nation">Field Nation Profile</a>
+            <a href="https://linkedin.com" target="_blank" class="profile-link">LinkedIn Profile</a>
+        </div>
+        <!-- RIGHT COLUMN: Commercial Lead Capture Form -->
+        <div class="form-container">
+            <h2 style="color: yellow; margin-top: 0; font-size: 26px; text-align: center; text-shadow: none;">IT Service Request</h2>
+            <!-- 🟢 INTEGRATED LIVE FORMSPREE LINK BELOW -->
+            <form action="https://formspree.io/f/xjglzyzy" method="POST" class="it-form">
+                <label for="name">Your Name / Contact *</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+                <label for="company">Business Name (If Applicable)</label>
+                <input type="text" id="company" name="company" placeholder="Company LLC">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="johndoe@email.com">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="(508) 555-0199">
+                <label for="devices">Approximate Device Count</label>
+                <select id="devices" name="devices">
+                    <option value="1">1 Device (Home Office / Remote User)</option>
+                    <option value="2-5">2 - 5 Devices (Micro Business)</option>
+                    <option value="6-15">6 - 15 Devices (Small Office)</option>
+                    <option value="16+">16+ Devices (Commercial Enterprise)</option>
+                </select>
+                <label for="issue">Describe Your Technical Issue or Project *</label>
+                <textarea id="issue" name="message" required placeholder="Describe what infrastructure, network, software, or server support you need..."></textarea>
+                <button type="submit" class="submit-btn">Submit Request</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 RT 9 East IT Services LLC. All Rights Reserved.</p>
+            <p>Providing Precision IT Solutions with Veteran Integrity.</p>
+        </div>
+    </footer>
 </body>
 </html>
