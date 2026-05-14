@@ -93,12 +93,12 @@
             border: 1px solid orange;
         }
         .email-text {
-            font-size: 1.4em;
+            font-size: 1.15em; /* Adjusted size slightly to fit the container bounds */
             color: #cc0000;
             display: block;
             margin-top: 10px;
             cursor: pointer;
-            word-wrap: break-word;
+            white-space: nowrap; /* Forces text onto a single line */
         }
         .profile-link {
             font-size: 1.4em;
@@ -207,7 +207,7 @@
         <div class="form-container">
             <h2 style="color: yellow; margin-top: 0; font-size: 26px; text-align: center; text-shadow: none;">IT Service Request</h2>
             <!-- 🟢 INTEGRATED LIVE FORMSPREE LINK BELOW -->
-            <form action="https://formspree.io/f/xjglzyzy" method="POST" class="it-form">
+            <form action="formspree.io" method="POST" class="it-form">
                 <label for="name">Your Name / Contact *</label>
                 <input type="text" id="name" name="name" required placeholder="John Doe">
                 <label for="company">Business Name (If Applicable)</label>
