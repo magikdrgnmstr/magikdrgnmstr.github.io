@@ -2,11 +2,11 @@
 <html>
 <head>
     <title>Resume - Michael Ludwig</title>
-    <!-- Font Awesome link for modern icons -->
-    <link rel="stylesheet" href="cloudflare.com">
+    <!-- Fixed: Added valid CDN link for Font Awesome icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         body {
-            /* 🖼️ Background image updated as requested */
+            /* Background image updated as requested */
             background-image: url("MESPhereSS.jpg");
             background-size: cover;
             background-attachment: fixed;
@@ -14,6 +14,8 @@
             font-family: sans-serif;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
             font-size: 20px;
+            margin: 0;
+            padding: 0;
         }
         h1 {
             font-size: 54px;
@@ -49,11 +51,19 @@
             border: 8px solid #2f2f2f;
             border-radius: 5px;
             box-shadow: 0 8px 16px rgba(0,0,0,0.5);
-            width: 60%; 
+            width: 60%;
             background: rgba(0,0,0,0.3);
+            height: 700px; /* Set layout block height matching the PDF */
+        }
+        
+        /* Fixed: Made the embed fill the parent layout block perfectly */
+        .pdf-frame embed {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
 
-        /* 📝 High-Converting Sidebar Styling */
+        /* High-Converting Sidebar Styling */
         .sidebar {
             width: 35%;
             background: rgba(0, 0, 0, 0.8);
@@ -113,74 +123,79 @@
             box-shadow: 0 0 15px #00ffff;
             transform: scale(1.02);
         }
-
-        a { color: #00ffff; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
+        a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Michael Ludwig's Resume</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Welcome.html">Welcome</a></li>
-            <li><a href="CompanyBackground.html">Company Background</a></li>
-            <li><a href="Certificates.html">Certificates</a></li>
-            <li><a href="Pricing.html">Pricing</a></li>
-            <li><a href="Client-Portal.html">Client Portal</a></li>
-            <li><a href="Store.html">Store</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h1>Michael Ludwig's Resume</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Welcome.html">Welcome</a></li>
+                <li><a href="CompanyBackground.html">Company Background</a></li>
+                <li><a href="Certificates.html">Certificates</a></li>
+                <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="Client-Portal.html">Client Portal</a></li>
+                <li><a href="Store.html">Store</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
 
-<hr>
+    <div class="main-content">
+        <!-- LEFT SIDE: Resume PDF -->
+        <div class="pdf-frame">
+            <!-- Fixed: Changed application/docx to application/pdf -->
+            <embed src="Michael Ludwig Res SC06.pdf" type="application/pdf" />
+        </div>
 
-<div class="main-content">
-    <!-- LEFT SIDE: Resume PDF -->
-    <div class="pdf-frame">
-        <embed src="Michael Ludwig Res SC06.pdf" type="application/docx" width="100%" height="700px" />
-    </div>
-
-    <!-- RIGHT SIDE: Lead Magnet Form -->
-    <div class="sidebar">
-        <h3>Free Tech Resource</h3>
-        <p style="color: orange; font-weight: bold; text-align: center; margin-bottom: 5px;">
-            <i class="fas fa-shield-alt"></i> Small Business Network Security Checklist
-        </p>
-        <p>
-            Secure your infrastructure. Protect your home office or business from ransomware threats with this diagnostic 10-point checklist.
-        </p>
-        
-        <!-- 🟢 INTEGRATED LIVE FORMSPREE LINK BELOW -->
-        <form action="https://formspree.io/f/xojrbezr" method="POST">
-            <!-- Automatically redirects user to the free checklist file after they submit information -->
-            <input type="hidden" name="_next" value="rt9east-itservices.com">
+        <!-- RIGHT SIDE: Lead Magnet Form -->
+        <div class="sidebar">
+            <h3>Free Tech Resource</h3>
+            <p style="color: orange; font-weight: bold; text-align: center; margin-bottom: 5px;">
+                <i class="fas fa-shield-alt"></i> Small Business Network Security Checklist
+            </p>
+            <p>
+                Secure your infrastructure. Protect your home office or business from ransomware threats with this diagnostic 10-point checklist.
+            </p>
             
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required placeholder="John Doe">
-
-            <label for="company">Business Name</label>
-            <input type="text" id="company" name="company" placeholder="Company LLC">
-
-            <label for="email">Business Email</label>
-            <input type="email" id="email" name="email" required placeholder="johndoe@business.com">
-
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" required placeholder="(508) 555-0199">
-
-            <button type="submit" class="download-btn">
-                <i class="fas fa-file-download"></i> Get Free Checklist
-            </button>
-        </form>
+            <!-- INTEGRATED LIVE FORMSPREE LINK BELOW -->
+            <form action="https://formspree.io/f/xojrbezr" method="POST">
+                <!-- Note: Ensure your redirection URL includes http:// or https:// -->
+                <input type="hidden" name="_next" value="https://rt9east-itservices.com">
+                
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+                
+                <label for="company">Business Name</label>
+                <input type="text" id="company" name="company" placeholder="Company LLC">
+                
+                <label for="email">Business Email</label>
+                <input type="email" id="email" name="email" required placeholder="johndoe@business.com">
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="(508) 555-0199">
+                
+                <button type="submit" class="download-btn">
+                    <i class="fas fa-file-download"></i> Get Free Checklist
+                </button>
+            </form>
+        </div>
     </div>
-</div>
 
-<div style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
-    <a href="index.html" style="font-size: 24px; color: #00ffff;">Click here to return to home</a>
-</div>
+    <div style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
+        <a href="index.html" style="font-size: 24px; color: #00ffff;">Click here to return to home</a>
+    </div>
 
 </body>
 </html>
